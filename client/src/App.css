@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+* {
+  /* background-color: rgb(10, 25, 47); */
+  color: aliceblue;
+  margin: 0%;
+  padding: 0%;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: rgb(10, 25, 47);
+}
+a {
+  color: #fff;
+}
+
+/* Header */
+
+.heading {
+  margin-left: 25px;
+  margin-top: 25px;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.subheading {
+  margin-left: 25px;
+  margin-bottom: 30px;
+}
+
+.subheading h3 {
+  color: aqua;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.github {
+  font-size: 45px;
+  position: absolute;
+  right: 35px;
+  top: 25px;
+}
+
+/* Footer */
+
+.footer {
+  background-color: rgb(23, 42, 69);
+  margin-top: 2rem;
+}
+.footer p {
+  margin: 0;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+.footer p a {
+  font-weight: 700;
+  text-decoration: none;
+}
+.footer p a:hover {
+  color: gold;
+  text-decoration: none;
+}
+.footer span {
+  color: red;
+  font-size: 1.5rem;
+}
