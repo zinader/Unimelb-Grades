@@ -15,3 +15,17 @@ console.log("Starting Server");
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
 });
+
+
+
+//setup mongoose
+console.log("Connecting to MongoDB");
+
+mongoose.connect(
+  "mongodb+srv://pulkit:wam123@cluster0.evqqp.mongodb.net/db1?retryWrites=true&w=majority",
+  { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true },
+  (err) => {
+    if (err) return console.error(err);
+    console.log("MongoDB connection established");
+  }
+);
