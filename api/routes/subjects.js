@@ -6,6 +6,8 @@ import Subject from "../models/subjects_model.js";
 
 router.route("/top").get((req, res) => {
   Subject.find()
+    .limit(20)
+    .sort({ scores: -1 })
     .then((result) =>
       res.json({
         success: true,
