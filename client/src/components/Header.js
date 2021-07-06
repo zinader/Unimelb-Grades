@@ -7,7 +7,7 @@ function Header() {
       <div className="heading">Average Subject Grades Unimelb </div>
       <div className="github">
         <a
-          href="https://github.com/zinader/Average-WAM"
+          href="https://github.com/zinader/WamBooster-WinterHack"
           target="_blank"
           rel="noreferrer"
         >
