@@ -3,12 +3,13 @@ import { Link, withRouter } from "react-router-dom";
 import customData from "./data/data.json";
 import HashLoader from "react-spinners/HashLoader";
 import { api } from "../services/api";
-import axios from "axios";
+import { FaSearch } from "react-icons/fa";
 
 const SubjectComponent = withRouter(() => {
   const [subjects, setSubjects] = useState(customData);
   const [topsubjects, setTopSubjects] = useState([]);
   const [loader, setLoader] = useState(true);
+  const [tempSubjects, setTempSubjects] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -27,40 +28,122 @@ const SubjectComponent = withRouter(() => {
     fetchData();
   }, []);
 
+  const filter = (e) => {
+    const keyword = e.target.value;
+
+    const keywordWithNoResults = [
+      {
+        subjectName: "No results for " + keyword,
+        subjectCode: "",
+        scores: [],
+      },
+    ];
+
+    if (!keyword) {
+      return setTempSubjects(topsubjects);
+    } else {
+      const results = subjects?.filter((subject) => {
+        return (
+          subject?.subjectName
+            ?.toLowerCase()
+            ?.indexOf(keyword.toLowerCase()) !== -1 ||
+          subject?.subjectCode
+            ?.toLowerCase()
+            ?.indexOf(keyword.toLowerCase()) !== -1
+        );
+      });
+      setTempSubjects(results.slice(0, 20));
+      if (!results.length) {
+        setTempSubjects(keywordWithNoResults);
+      }
+    }
+  };
+
   return (
     <div>
       <div className="container-fluid main-component">
-        {loader ? (
-          <div className="loader">
-            <HashLoader size={170} color={"aqua"} loading={loader}></HashLoader>
+        <div className="search-wrapper">
+          <label htmlFor="search-form">
+            <input
+              type="search"
+              name="search-form"
+              id="search-form"
+              className="search-input"
+              placeholder="Search"
+              onChange={filter}
+            />
+            <span className="search-icon">
+              <FaSearch />
+            </span>
+          </label>
+          <div>
+            <h2>Top Subjects</h2>
           </div>
-        ) : (
-          <div className="subjects">
-            <div className="row">
-              {topsubjects?.map((data) => (
-                <div className="col-md-4">
-                  <Link
-                    to={`/subjects/${data.subjectName}/${data.subjectCode}`}
-                    style={{ textDecoration: "none" }}
-                  >
-                    <div className="subjects-div">
-                      <div className="subject-name">
-                        <h1>{data.subjectName}</h1>
-                        <div className="subject-scores-length">
-                          <h3>{data?.scores?.length} Results</h3>
-                        </div>
-                      </div>
-
-                      <div className="subject-code">
-                        <h2>{data.subjectCode}</h2>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-              ))}
+        </div>
+        <div id="blur">
+          {loader ? (
+            <div className="loader">
+              <HashLoader
+                size={170}
+                color={"aqua"}
+                loading={loader}
+              ></HashLoader>
             </div>
-          </div>
-        )}
+          ) : (
+            <div className="subjects">
+              <div className="row">
+                {tempSubjects.length > 0 ? (
+                  <>
+                    {tempSubjects?.map((data) => (
+                      <div className="col-md-4">
+                        <Link
+                          to={`/subjects/${data.subjectName}/${data.subjectCode}`}
+                          style={{ textDecoration: "none" }}
+                        >
+                          <div className="subjects-div">
+                            <div className="subject-name">
+                              <h1>{data.subjectName}</h1>
+                              <div className="subject-scores-length">
+                                <h3>{data?.scores?.length} Results</h3>
+                              </div>
+                            </div>
+                            <div className="subject-code">
+                              <h2>{data.subjectCode}</h2>
+                            </div>
+                          </div>
+                        </Link>
+                      </div>
+                    ))}
+                  </>
+                ) : (
+                  <>
+                    {topsubjects?.map((data) => (
+                      <div className="col-md-4">
+                        <Link
+                          to={`/subjects/${data.subjectName}/${data.subjectCode}`}
+                          style={{ textDecoration: "none" }}
+                        >
+                          <div className="subjects-div">
+                            <div className="subject-name">
+                              <h1>{data.subjectName}</h1>
+                              <div className="subject-scores-length">
+                                <h3>{data?.scores?.length} Results</h3>
+                              </div>
+                            </div>
+
+                            <div className="subject-code">
+                              <h2>{data.subjectCode}</h2>
+                            </div>
+                          </div>
+                        </Link>
+                      </div>
+                    ))}
+                  </>
+                )}
+              </div>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
