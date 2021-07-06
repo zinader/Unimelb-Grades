@@ -1,6 +1,8 @@
 import React from "react";
 
 import Header from "./Header";
+import SubjectComponent from "./SubjectComponent";
+
 import Footer from "./Footer";
 
 function MainComponent() {
@@ -14,6 +16,7 @@ function MainComponent() {
         </h3>
       </div>
 
+      <SubjectComponent />
       <Footer />
     </div>
   );
