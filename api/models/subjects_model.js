@@ -10,7 +10,7 @@ const subjectSchema = new Schema(
     feedback: [
       {
         comment: { type: String, required: true },
-        rating: { type: Number, min: 0, max: 5, required: true },
+        upvotes: { type: Number, required: true, default: 0 },
         report: { type: Boolean, default: false },
       },
     ],

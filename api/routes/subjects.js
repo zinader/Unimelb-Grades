@@ -24,6 +24,50 @@ router.route("/").post((req, res) => {
     );
 });
 
+// Upvote Comment
+
+router.route("/feedback/upvote/:upvotes").post((req, res) => {
+  Subject.findOneAndUpdate(
+    { subjectCode: req.body.subjectCode, "feedback._id": req.body.id },
+    { $set: { "feedback.$.upvotes": Number(req.params.upvotes) + 1 } },
+    { new: true }
+  )
+    .then((result) =>
+      res.json({
+        success: true,
+        data: result,
+      })
+    )
+    .catch((err) =>
+      res.json({
+        success: false,
+        error: err,
+      })
+    );
+});
+
+// Downvote Comment
+
+router.route("/feedback/downvote/:upvotes").post((req, res) => {
+  Subject.findOneAndUpdate(
+    { subjectCode: req.body.subjectCode, "feedback._id": req.body.id },
+    { $set: { "feedback.$.upvotes": Number(req.params.upvotes) - 1 } },
+    { new: true }
+  )
+    .then((result) =>
+      res.json({
+        success: true,
+        data: result,
+      })
+    )
+    .catch((err) =>
+      res.json({
+        success: false,
+        error: err,
+      })
+    );
+});
+
 // Submit Feedback
 
 router.route("/feedback").post((req, res) => {
@@ -45,6 +89,8 @@ router.route("/feedback").post((req, res) => {
       })
     );
 });
+
+// Report Comment
 
 router.route("/feedback/report").post((req, res) => {
   Subject.findOneAndUpdate(
