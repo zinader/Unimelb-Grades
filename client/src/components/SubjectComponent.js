@@ -1,15 +1,18 @@
 import React, { useState, useEffect } from "react";
 import { Link, withRouter } from "react-router-dom";
+import { FaSearch } from "react-icons/fa";
+
 import customData from "./data/data.json";
 import HashLoader from "react-spinners/HashLoader";
 import { api } from "../services/api";
-import { FaSearch } from "react-icons/fa";
+import PromptForm from "./PromptComponent";
 
 const SubjectComponent = withRouter(() => {
   const [subjects, setSubjects] = useState(customData);
   const [topsubjects, setTopSubjects] = useState([]);
-  const [loader, setLoader] = useState(true);
   const [tempSubjects, setTempSubjects] = useState([]);
+  const [loader, setLoader] = useState(true);
+  const [buttonPopup, setButtonPopup] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -59,10 +62,32 @@ const SubjectComponent = withRouter(() => {
     }
   };
 
+  function toggletoBlur() {
+    if (buttonPopup !== true) {
+      var blur = document.getElementById("blur");
+      blur.classList.toggle("active");
+    }
+    setButtonPopup(true);
+  }
+
+  function toggletoRemoveBlur() {
+    if (buttonPopup !== false) {
+      var blur = document.getElementById("blur");
+      blur.classList.toggle("active");
+    }
+    setButtonPopup(false);
+  }
+
   return (
     <div>
       <div className="container-fluid main-component">
         <div className="search-wrapper">
+          {/* <div className="explanation">
+            <p>
+              This list has every subject in the Unimelb Handbook. Search takes
+              some time because this is a huge dataset :)
+            </p>
+          </div> */}
           <label htmlFor="search-form">
             <input
               type="search"
@@ -74,6 +99,15 @@ const SubjectComponent = withRouter(() => {
             />
             <span className="search-icon">
               <FaSearch />
+            </span>
+            <span className="popup-btn">
+              <button classname="add-score-btn" onClick={() => toggletoBlur()}>
+                Add Score
+              </button>
+              <PromptForm
+                trigger={buttonPopup}
+                setTrigger={toggletoRemoveBlur}
+              />
             </span>
           </label>
           <div>
