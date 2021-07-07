@@ -40,6 +40,18 @@
         "subjectCode": "GENE90003"
     },
     {
+        "subjectName": "Algebra",
+        "subjectCode": "MAST30005"
+    },
+    {
+        "subjectName": "Stochastic Modelling",
+        "subjectCode": "MAST30001"
+    },
+    {
+        "subjectName": "Graph Theory",
+        "subjectCode": "MAST30011"
+    },
+    {
         "subjectName": "Advanced Studies in Econometrics 1",
         "subjectCode": "ECOM90018"
     },
