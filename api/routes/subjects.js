@@ -154,7 +154,7 @@ router.route("/").get((req, res) => {
 
 router.route("/top").get((req, res) => {
   Subject.find()
-    .limit(30)
+    .limit(15)
     .sort({ scores: -1 })
     .then((result) =>
       res.json({
