@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Form, Button } from "react-bootstrap";
 import { FaWindowClose } from "react-icons/fa";
+import { api } from "../services/api";
 
 const PromptForm = (props) => {
   const [subjectCode, setSubjectCode] = useState("");
@@ -11,8 +12,8 @@ const PromptForm = (props) => {
     e.preventDefault();
 
     const sendRequest = async () => {
-      await axios
-        .post("https://averagegrade.herokuapp.com/subjects/", {
+      await api
+        .post("/", {
           subjectCode,
           score,
         })
