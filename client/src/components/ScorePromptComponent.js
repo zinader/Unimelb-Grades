@@ -21,7 +21,12 @@ const ScorePromptForm = (props) => {
           window.location.reload();
         });
     };
-    sendRequest();
+
+    if (score.replace(/\s/g, "") !== "") {
+      sendRequest();
+    } else {
+      alert("Please enter a valid number!");
+    }
     setScore("");
   };
 

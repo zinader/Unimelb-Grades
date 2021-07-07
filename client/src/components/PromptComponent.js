@@ -18,14 +18,19 @@ const PromptForm = (props) => {
         })
         .then((res) => {
           if (res?.data?.data == null) {
-            alert("Please check subject name again.");
+            alert("Please check subject code again.");
           } else {
             alert("Thankyou for contributing :)");
             window.location.reload();
           }
         });
     };
-    sendRequest();
+
+    if (score.replace(/\s/g, "") !== "") {
+      sendRequest();
+    } else {
+      alert("Please enter a valid number!");
+    }
     setSubjectCode("");
     setScore("");
   };
