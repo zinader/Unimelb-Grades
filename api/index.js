@@ -24,7 +24,7 @@ app.use("/subjects", subjectsRouter);
 console.log("Connecting to MongoDB");
 
 mongoose.connect(
-  "mongodb+srv://pulkit:wam123@cluster0.evqqp.mongodb.net/db1?retryWrites=true&w=majority",
+  "mongodb+srv://<username>:<password>@cluster0.evqqp.mongodb.net/db1?retryWrites=true&w=majority",
   { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true },
   (err) => {
     if (err) return console.error(err);
