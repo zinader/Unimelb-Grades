@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import axios from "axios";
 import { Form, Button } from "react-bootstrap";
 import { FaWindowClose } from "react-icons/fa";
 import { api } from "../services/api";

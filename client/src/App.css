@@ -14,6 +14,16 @@ a {
   color: #fff;
 }
 
+*:focus {
+  outline: none;
+}
+
+#blur.active {
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+}
+
 ::marker {
   color: rgb(10, 25, 47);
 }
@@ -32,6 +42,7 @@ a {
 }
 
 .subheading {
+  width: 1200px;
   margin-top: 20px;
   margin-left: 25px;
   margin-bottom: 30px;
@@ -39,7 +50,7 @@ a {
 
 .subheading h3 {
   color: aqua;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
@@ -187,4 +198,460 @@ a {
 
 .popup-trigger button {
   background-color: rgb(10, 25, 47) !important;
+}
+
+/* Popup Form */
+
+.popup {
+  position: fixed;
+  top: 180px;
+  left: 100px;
+  width: 84%;
+  height: 35vh;
+  border-radius: 6px;
+  z-index: 3;
+  background-color: #8498b5;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+}
+
+.popup .close-button {
+  position: absolute;
+  width: 50px !important;
+  top: 40px;
+  right: 50px;
+  background-color: rgb(10, 25, 47) !important;
+}
+
+.form {
+  width: 80vw;
+  background-color: rgb(23, 42, 69);
+  border-radius: 6px;
+  margin-left: 25px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  height: 25vh;
+}
+
+.form-div-heading {
+  font-size: 28px;
+  color: aliceblue;
+  font-weight: bold;
+  margin-left: 15px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+.form-div-sub-heading {
+  font-size: 16px;
+  color: aqua;
+  font-weight: 700;
+  margin-left: 15px;
+  padding-top: 5px;
+}
+
+.subjectname-input {
+  background-color: rgb(10, 25, 47) !important;
+  color: aliceblue;
+  border-radius: 6px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  width: 280px;
+  height: 2.1rem;
+  padding-left: 10px;
+  border: none;
+  background-color: #8498b5;
+}
+
+.subjectname-input:hover {
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+  transition: 0.6ms;
+}
+
+.score-input {
+  background-color: rgb(10, 25, 47);
+  color: aliceblue;
+  border-radius: 6px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  width: 50px;
+  height: 2.1rem;
+  padding-left: 10px;
+  border: none;
+}
+
+.score-input:hover {
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+  transition: 0.6ms;
+}
+
+.score-input {
+  border: none;
+  outline: none;
+}
+
+.form-row {
+  margin-top: 20px;
+}
+
+.form-row > div {
+  display: flex;
+  height: 60px;
+}
+
+.form-name {
+  margin-left: 18px;
+  font-size: 22px;
+  color: aliceblue !important;
+}
+
+.submit-button {
+  color: rgba(255, 255, 255, 0.698);
+  border: none;
+  outline: none;
+  margin-left: 15px;
+  font-size: 17px;
+  font-weight: bold;
+  width: 100px;
+  height: 2.1rem;
+  border-radius: 6px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.submit-button:hover {
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+  transition: 0.6ms;
+  background-color: rgb(23, 42, 69);
+}
+
+.submit-button:focus {
+  background-color: rgb(10, 25, 47);
+  outline: none;
+}
+
+/* Score Component  */
+
+.back-button {
+  margin-left: 25px;
+  margin-top: 15px;
+  font-size: 30px;
+}
+
+.scores {
+  display: flex;
+  margin-left: 35px;
+  margin-top: 15px;
+}
+
+.scores-div {
+  margin-right: 20px;
+}
+
+.graph {
+  margin-top: 20px;
+}
+
+.no-results {
+  position: absolute;
+  top: 420px;
+  left: 600px;
+}
+
+.loader-graph {
+  position: absolute;
+  top: 500px;
+  left: 690px;
+}
+
+.view-handbook-btn button {
+  background-color: rgb(23, 42, 69) !important;
+  margin-top: 15px;
+  margin-left: 20px;
+  border-radius: 6px;
+  border: none;
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.698);
+  font-size: 1.2rem;
+}
+
+.view-handbook-btn button:hover {
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Graph Component */
+
+.average-score {
+  margin-left: 25px;
+}
+
+.graph-heading {
+  margin-left: 25px;
+  margin-top: 30px;
+}
+
+.graph-name {
+  font-size: 26px;
+}
+
+.graph-code {
+  margin-left: 20px;
+  color: aqua;
+  font-size: 26px;
+}
+
+.chart {
+  background-color: aliceblue;
+  border-radius: 6px;
+  height: 380px;
+  margin-top: 30px;
+  width: 40vw;
+  padding-top: 40px;
+  margin-left: 45px;
+  padding-left: 30px;
+  color: rgb(10, 25, 47) !important;
+}
+
+.apexcharts-menu {
+  background-color: rgb(10, 25, 47) !important;
+  border-radius: 6px !important;
+}
+
+/* Score Component Popup */
+
+.score-btns {
+  display: flex;
+}
+
+.score-popup-btn button {
+  background-color: rgb(23, 42, 69);
+  border-radius: 6px;
+  border: none;
+  height: 47px;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.698);
+  width: 145px;
+  margin-top: 15px;
+}
+
+.score-popup-btn button:hover {
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+  transition: 0.6ms;
+}
+
+.popup-trigger-2 button {
+  background-color: rgb(10, 25, 47) !important;
+  margin-top: -5px !important;
+}
+
+.popup .close-button-2 {
+  position: absolute;
+  width: 50px !important;
+  top: 30px;
+  right: 50px;
+  background-color: rgb(10, 25, 47) !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .heading {
+    width: 180px;
+    font-size: 20px;
+    margin-top: 35px;
+  }
+
+  .subheading {
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 290px;
+  }
+
+  .subheading h3 {
+    color: aqua;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .github {
+    right: 45px;
+  }
+  .form {
+    width: 75vw;
+    margin-top: 8px;
+    height: 318px;
+  }
+  .form-div-heading {
+    font-size: 21px;
+  }
+
+  .form-div-sub-heading {
+    color: aqua;
+    font-size: 16px;
+  }
+
+  .form-row > div {
+    height: 50px;
+  }
+
+  .form-name {
+    width: 130px;
+    font-size: 19px;
+  }
+  .subjectname-input {
+    font-size: 15px;
+    width: 105px;
+  }
+  .score-input {
+    font-size: 15px;
+    width: 60px;
+    margin-right: 100px;
+    height: 2.1rem;
+    padding-left: 10px;
+    border: none;
+  }
+
+  /* Subjects */
+
+  .subjects-div {
+    width: 80vw;
+  }
+
+  .subject-name {
+    width: 100px;
+  }
+
+  .subject-name h1 {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+  }
+  .subject-code h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+  }
+  .subject-scores-length h3 {
+    font-size: 0.9rem;
+  }
+
+  /* Footer */
+
+  .footer {
+    width: 100vw;
+  }
+
+  /* Graph */
+
+  .graph-name {
+    width: 60px !important;
+    font-size: 1.1rem;
+  }
+  .graph-code {
+    font-size: 1.2rem;
+  }
+  .average-score h2 {
+    font-size: 1.1rem;
+  }
+  .chart {
+    width: 75vw;
+  }
+  /* Loader */
+
+  .loader {
+    top: 500px;
+    left: 180px;
+  }
+
+  .loader-graph {
+    top: 400px;
+    left: 180px;
+  }
+  .no-results {
+    top: 400px;
+    left: 90px;
+  }
+
+  /* Popup */
+
+  .popup {
+    top: 40px;
+    left: 20px;
+    height: 340px;
+    width: 87vw;
+  }
+
+  .popup-btn button {
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+
+  .popup .close-button {
+    position: absolute;
+    width: 40px;
+    top: 20px;
+    right: 40px;
+  }
+  .popup .close-icon {
+    margin-bottom: 15px;
+  }
+
+  .submit-button {
+    margin-left: 20px !important;
+    margin-top: -10px !important ;
+    width: 60px;
+  }
+  .search-input {
+    width: 180px;
+    margin-right: 10px;
+  }
+  .search-icon {
+    margin-right: 40px;
+  }
+  .average-score {
+    margin-left: 25px;
+  }
+
+  .view-handbook-btn button {
+    background-color: rgb(23, 42, 69) !important;
+    font-size: 0.8rem;
+    border-radius: 6px;
+    margin-top: 15px;
+    margin-left: 20px;
+
+    height: 47px;
+    border: none;
+    padding: 10px;
+  }
+
+  .view-handbook-btn button:hover {
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+  }
+
+  .score-popup-btn button {
+    background-color: rgb(23, 42, 69);
+    border-radius: 6px;
+    border: none;
+    height: 47px;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.698);
+    width: 95px;
+    margin-top: 15px;
+  }
+
+  .score-popup-btn button:hover {
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+    transition: 0.6ms;
+  }
+
+  .popup-trigger-2 button {
+    background-color: rgb(10, 25, 47) !important;
+    margin-top: 5px !important;
+  }
+
+  .popup .close-button-2 {
+    position: absolute;
+    width: 50px !important;
+    top: 10px;
+    right: 50px;
+    background-color: rgb(10, 25, 47) !important;
+  }
 }
