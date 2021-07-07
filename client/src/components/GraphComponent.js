@@ -8,15 +8,15 @@ const GraphComponent = ({ scores }) => {
     var x = Number(scores[i]);
     if (x < 50) {
       data2[0] += 1;
-    } else if (x >= 50 && x < 60) {
+    } else if (x >= 50 && x < 65) {
       data2[1] += 1;
-    } else if (x >= 60 && x < 70) {
+    } else if (x >= 65 && x < 70) {
       data2[2] += 1;
-    } else if (x >= 70 && x < 80) {
+    } else if (x >= 70 && x < 75) {
       data2[3] += 1;
-    } else if (x >= 80 && x < 90) {
+    } else if (x >= 75 && x < 80) {
       data2[4] += 1;
-    } else if (x >= 90 && x < 1000) {
+    } else if (x >= 80 && x < 100) {
       data2[5] += 1;
     }
   }
@@ -40,11 +40,11 @@ const GraphComponent = ({ scores }) => {
       xaxis: {
         categories: [
           "< 50 (F)",
-          "50 - 60 (P)",
-          "60 - 70 (H3)",
-          "70 - 80 (H2)",
-          "80 - 90 (H1)",
-          "90 - 100 (H1)",
+          "50-64(P)",
+          "64-69(H3)",
+          "70-74(H2B)",
+          "75-79(H2A)",
+          "80-100(H1)",
         ],
         title: {
           text: "Grade",
