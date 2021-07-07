@@ -150,11 +150,11 @@ router.route("/").get((req, res) => {
     );
 });
 
-// Get top 20 subjects
+// Get top 30 subjects
 
 router.route("/top").get((req, res) => {
   Subject.find()
-    .limit(15)
+    .limit(30)
     .sort({ scores: -1 })
     .then((result) =>
       res.json({
