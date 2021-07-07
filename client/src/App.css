@@ -14,6 +14,14 @@ a {
   color: #fff;
 }
 
+::marker {
+  color: rgb(10, 25, 47);
+}
+
+.main-component {
+  min-height: 100vh;
+}
+
 /* Header */
 
 .heading {
@@ -24,6 +32,7 @@ a {
 }
 
 .subheading {
+  margin-top: 20px;
   margin-left: 25px;
   margin-bottom: 30px;
 }
@@ -64,4 +73,94 @@ a {
 .footer span {
   color: red;
   font-size: 1.5rem;
+}
+
+/* Search */
+
+.search-wrapper {
+  margin-top: 20px;
+  margin-left: 25px;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.698);
+}
+
+.search-input {
+  color: rgba(255, 255, 255, 0.698) !important;
+  font-weight: bold;
+  border-radius: 6px;
+  border: none;
+  margin-right: 10px;
+  padding-left: 10px;
+
+  background-color: rgb(23, 42, 69);
+  margin-bottom: 30px;
+  height: 40px;
+  font-size: 20px;
+}
+
+.search-input:hover {
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+  transition: 0.6ms;
+}
+
+/* Loader */
+
+.loader {
+  position: absolute;
+  top: 500px;
+  left: 690px;
+}
+
+/* Subjects */
+
+.subjects {
+  margin-top: 15px;
+  margin-left: 25px;
+}
+
+.row {
+  display: list-item;
+}
+
+.subjects-div {
+  display: flex;
+  margin-bottom: 1.2rem;
+  background-color: rgb(23, 42, 69);
+  padding: 0.5rem;
+  width: 90vw;
+  border-radius: 6px;
+}
+.subjects-div:hover {
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+}
+.subject-name {
+  margin-top: 7px;
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+
+.subject-name h1 {
+  font-size: 1.7rem;
+  margin-bottom: 0;
+}
+
+.subject-scores-length {
+  margin-top: 5px;
+}
+
+.subject-scores-length h3 {
+  color: aqua !important;
+}
+
+.subject-code {
+  margin-left: auto;
+  margin-bottom: 0;
+  margin-right: 20px;
+}
+
+.subject-code h2 {
+  margin-top: 15px;
+  color: aqua !important;
 }
