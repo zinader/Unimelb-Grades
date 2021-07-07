@@ -7,6 +7,13 @@ const subjectSchema = new Schema(
     subjectName: { type: String, required: true },
     subjectCode: { type: String, required: true },
     scores: { type: Array, required: true, default: [] },
+    feedback: [
+      {
+        comment: { type: String, required: true },
+        rating: { type: Number, min: 0, max: 5, required: true },
+        report: { type: Boolean, default: false },
+      },
+    ],
   },
   {
     timestamps: true,
