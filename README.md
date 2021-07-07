@@ -8,4 +8,4 @@ Tech Stack
 - Node.js
 - MongoDB
 
-Deployed Application: https://averagewam.web.app/
+Deployed Application: https://grades.tech/
