@@ -70,7 +70,7 @@ router.route("/feedback/downvote/:upvotes").post((req, res) => {
 
 // Submit Feedback
 
-router.route("/feedback").post((req, res) => {
+router.route("/addfeedback").post((req, res) => {
   Subject.findOneAndUpdate(
     { subjectCode: req.body.subjectCode },
     { $push: { feedback: req.body.feedback } },

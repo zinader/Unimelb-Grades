@@ -8,6 +8,7 @@ import ScorePromptForm from "./ScorePromptComponent";
 import { api } from "../services/api";
 import Header from "./Header";
 import GraphComponent from "./GraphComponent";
+import FeedbackComponent from "./FeedbackComponent";
 
 const ScoreComponent = withRouter((props) => {
   const [scores, setScores] = useState([]);
@@ -83,6 +84,9 @@ const ScoreComponent = withRouter((props) => {
               <div>
                 <div className="graph">
                   <GraphComponent scores={scores} />
+                </div>
+                <div>
+                  <FeedbackComponent data={props.match.params.code} />
                 </div>
               </div>
             ) : (
