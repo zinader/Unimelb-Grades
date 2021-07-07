@@ -10,7 +10,6 @@ import Header from "./Header";
 import GraphComponent from "./GraphComponent";
 
 const ScoreComponent = withRouter((props) => {
-  console.log(props);
   const [scores, setScores] = useState([]);
   const [loader, setLoader] = useState(true);
   const [buttonPopup, setButtonPopup] = useState(false);

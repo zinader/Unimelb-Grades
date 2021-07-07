@@ -8,6 +8,8 @@ import { api } from "../services/api";
 import PromptForm from "./PromptComponent";
 
 const SubjectComponent = withRouter(() => {
+  
+
   const [subjects, setSubjects] = useState(customData);
   const [topsubjects, setTopSubjects] = useState([]);
   const [tempSubjects, setTempSubjects] = useState([]);
@@ -82,12 +84,6 @@ const SubjectComponent = withRouter(() => {
     <div>
       <div className="container-fluid main-component">
         <div className="search-wrapper">
-          {/* <div className="explanation">
-            <p>
-              This list has every subject in the Unimelb Handbook. Search takes
-              some time because this is a huge dataset :)
-            </p>
-          </div> */}
           <label htmlFor="search-form">
             <input
               type="search"
