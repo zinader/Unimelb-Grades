@@ -164,3 +164,27 @@ a {
   margin-top: 15px;
   color: aqua !important;
 }
+
+/* Popup Button */
+
+.popup-btn button {
+  background-color: rgb(23, 42, 69);
+  margin-left: 35px;
+  border-radius: 6px;
+  border: none;
+  height: 40px;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.698);
+  padding-left: 5px;
+  width: 140px;
+  height: 42px;
+}
+
+.popup-btn button:hover {
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+  transition: 0.6ms;
+}
+
+.popup-trigger button {
+  background-color: rgb(10, 25, 47) !important;
+}
