@@ -8,8 +8,6 @@ import { api } from "../services/api";
 import PromptForm from "./PromptComponent";
 
 const SubjectComponent = withRouter(() => {
-  
-
   const [subjects, setSubjects] = useState(customData);
   const [topsubjects, setTopSubjects] = useState([]);
   const [tempSubjects, setTempSubjects] = useState([]);
@@ -23,6 +21,21 @@ const SubjectComponent = withRouter(() => {
     };
     fetchData();
   }, []);
+
+  // Local Storage Implementation (to be updated after all data is there)
+
+  // useEffect(() => {
+  //   if (localStorage.length == 0) {
+  //     const fetchData = async () => {
+  //       const results = await api.get("/");
+  //       localStorage.setItem("subject", JSON.stringify(results?.data?.data));
+  //       setSubjects(results?.data?.data);
+  //     };
+  //     fetchData();
+  //   } else {
+  //     setSubjects(JSON.parse(localStorage.getItem("subject")));
+  //   }
+  // }, []);
 
   useEffect(() => {
     const fetchData = async () => {

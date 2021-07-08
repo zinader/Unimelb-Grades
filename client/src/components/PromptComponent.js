@@ -31,8 +31,6 @@ const PromptForm = (props) => {
     } else {
       alert("Please enter a valid number!");
     }
-    setSubjectCode("");
-    setScore("");
   };
 
   return props.trigger ? (

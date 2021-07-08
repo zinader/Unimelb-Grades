@@ -32,7 +32,7 @@ const FeedbackComponent = withRouter((props) => {
         })
         .then((res) => {
           window.location.reload();
-        });
+        }, []);
     };
     sendRequest();
   };
@@ -51,20 +51,20 @@ const FeedbackComponent = withRouter((props) => {
     sendRequest();
   };
 
-  const handleReport = (id) => {
-    const sendRequest = async () => {
-      await api
-        .post("/feedback/report", {
-          subjectCode,
-          id,
-        })
-        .then((res) => {
-          alert("Comment Reported. We will review the comment soon :)");
-          window.location.reload();
-        });
-    };
-    sendRequest();
-  };
+  // const handleReport = (id) => {
+  //   const sendRequest = async () => {
+  //     await api
+  //       .post("/feedback/report", {
+  //         subjectCode,
+  //         id,
+  //       })
+  //       .then((res) => {
+  //         alert("Comment Reported. We will review the comment soon :)");
+  //         window.location.reload();
+  //       });
+  //   };
+  //   sendRequest();
+  // };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -85,7 +85,7 @@ const FeedbackComponent = withRouter((props) => {
 
   return (
     <div>
-      <div className="feedback-heading">Comments</div>
+      <div className="feedback-heading">Feedback & Resources</div>
       <div className="feedback">
         {allfeedback?.map((data) => (
           <div className="col-md-4">
@@ -107,11 +107,11 @@ const FeedbackComponent = withRouter((props) => {
                       Downvote
                     </button>
                   </div>
-                  <div className="report-comment">
+                  {/* <div className="report-comment">
                     <button onClick={() => handleReport(data._id)}>
                       Report
                     </button>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className="upvotes">
