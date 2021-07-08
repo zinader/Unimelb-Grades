@@ -664,6 +664,31 @@ a {
   margin-bottom: 30px;
 }
 
+.wam-booster-mark {
+  color: rgba(255, 255, 255, 0.698);
+}
+
+.mark-wam-btn button {
+  background-color: rgb(23, 42, 69) !important;
+  margin-top: 0px;
+  margin-left: 30px;
+  border-radius: 6px;
+  border: none;
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.698);
+  font-size: 1.2rem;
+}
+
+.mark-wam-btn button:hover {
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+}
+
+.warning {
+  font-size: 16px;
+  color: aqua;
+  font-weight: 700;
+}
+
 @media only screen and (max-width: 768px) {
   .heading {
     width: 180px;

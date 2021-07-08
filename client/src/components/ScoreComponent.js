@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { withRouter } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { FaBackward } from "react-icons/fa";
+import { FaCheck } from "react-icons/fa";
 import HashLoader from "react-spinners/HashLoader";
 
 import ScorePromptForm from "./ScorePromptComponent";
@@ -11,6 +12,7 @@ import GraphComponent from "./GraphComponent";
 import FeedbackComponent from "./FeedbackComponent";
 
 const ScoreComponent = withRouter((props) => {
+  const [subjectCode] = useState(props.match.params.code);
   const [scores, setScores] = useState([]);
   const [loader, setLoader] = useState(true);
   const [buttonPopup, setButtonPopup] = useState(false);
@@ -40,6 +42,21 @@ const ScoreComponent = withRouter((props) => {
     setButtonPopup(false);
   }
 
+  const onWamButton = () => {
+    console.log(subjectCode);
+    const sendRequest = async () => {
+      await api
+        .post("/addwambooster", {
+          subjectCode: subjectCode,
+        })
+        .then((res) => {
+          localStorage.setItem("wambooster", true);
+          window.location.reload();
+        });
+    };
+    sendRequest();
+  };
+
   return (
     <div>
       <Header />
@@ -51,6 +68,22 @@ const ScoreComponent = withRouter((props) => {
       <div className="graph-heading">
         <span className="graph-name">{props.match.params.name}</span>
         <span className="graph-code">{props.match.params.code}</span>
+        {localStorage.getItem("wambooster") ? (
+          <></>
+        ) : (
+          <>
+            <span className="mark-wam-btn">
+              <button onClick={() => onWamButton()}>
+                <div className="wam-booster-mark">
+                  Mark as a WAM Booster <FaCheck />
+                </div>
+                <div className="warning">
+                  1 user can only do one recommendation so think wisely :)
+                </div>
+              </button>
+            </span>
+          </>
+        )}
         <div className="score-btns">
           <div className="score-popup-btn">
             <button classname="add-score-btn-2" onClick={() => toggletoBlur()}>
