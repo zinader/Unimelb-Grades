@@ -12,6 +12,14 @@
         "subjectCode": "ARTS90029"
     },
     {
+        "subjectName": "Chemistry 1",
+        "subjectCode": "CHEM10003"
+    },
+    {
+        "subjectName": "Science and Pseudoscience",
+        "subjectCode": "HPSC10002"
+    },
+    {
         "subjectName": "Air Quality Monitoring",
         "subjectCode": "EVSC90033"
     },
@@ -50,6 +58,22 @@
     {
         "subjectName": "Graph Theory",
         "subjectCode": "MAST30011"
+    },
+    {
+        "subjectName": "Philosophy: The Big Questions",
+        "subjectCode": "PHIL10002"
+    },
+    {
+        "subjectName": "Applied Mathematical Modelling",
+        "subjectCode": "MAST30030"
+    },
+    {
+        "subjectName": "Intermediate Macroeconomics",
+        "subjectCode": "ECOM20001"
+    },
+    {
+        "subjectName": "Econometrics 2",
+        "subjectCode": "ECOM30002"
     },
     {
         "subjectName": "Advanced Studies in Econometrics 1",

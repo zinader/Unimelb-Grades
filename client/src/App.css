@@ -18,6 +18,12 @@ a {
   outline: none;
 }
 
+.missing-form:hover {
+  text-decoration: none;
+  color: #8498b5;
+  transition: 0.6s;
+}
+
 #blur.active {
   filter: blur(20px);
   pointer-events: none;
