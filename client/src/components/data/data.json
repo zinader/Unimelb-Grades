@@ -12,6 +12,139 @@
         "subjectCode": "ARTS90029"
     },
     {
+        "subjectName": "Foundations of Physics",
+        "subjectCode": "PHYC10009"
+    },
+    {
+        "subjectName": "Principles of Neuroscience",
+        "subjectCode": "NEUR30003"
+    },
+    {
+        "subjectName": "Principles of Microbiology & Immunology",
+        "subjectCode": "MIIM20001"
+    },
+    {
+        "subjectName": "Exploring Human Disease",
+        "subjectCode": "PATH20001"
+    },
+    {
+        "subjectName": "Biology of Australian Flora & Fauna",
+        "subjectCode": "BIOL10001"
+    },
+    {
+        "subjectName": "Italian 2",
+        "subjectCode": "ITAL10005"
+    },
+    {
+        "subjectName": "Foundations of Genetics and Genomics",
+        "subjectCode": "GENE20001"
+    },
+    {
+        "subjectName": "Painting Techniques",
+        "subjectCode": "FINA20026"
+    },
+    {
+        "subjectName": "Vector Calculus: Advanced",
+        "subjectCode": "MAST20032"
+    },
+    {
+        "subjectName": "The Developing World",
+        "subjectCode": "DEVT10001"
+    },
+    {
+        "subjectName": "Experimental Reproductive Physiology",
+        "subjectCode": "BIOL30002"
+    },
+    {
+        "subjectName": "Reproductive Physiology",
+        "subjectCode": "BIOL30001"
+    },
+    {
+        "subjectName": "Human Locomotor Systems",
+        "subjectCode": "ANAT30007"
+    },
+    {
+        "subjectName": "Clinical and Translational Physiology",
+        "subjectCode": "PHYS30011"
+    },
+    {
+        "subjectName": "Neuroscience and the Mind",
+        "subjectCode": "PSYC30018"
+    },
+    {
+        "subjectName": "Thinking Scientifically",
+        "subjectCode": "SCIE20001"
+    },
+    {
+        "subjectName": "The Philosophy of Mind",
+        "subjectCode": "PHIL20033"
+    },
+    {
+        "subjectName": "Human Physiology",
+        "subjectCode": "PHYS20008"
+    },
+    {
+        "subjectName": "Genetics & The Evolution of Life",
+        "subjectCode": "BIOL10005"
+    },
+    {
+        "subjectName": "Drugs in Biomedical Experiments",
+        "subjectCode": "PHRM30009"
+    },
+    {
+        "subjectName": "Biology of Cells and Organisms",
+        "subjectCode": "PHYS20008"
+    },
+    {
+        "subjectName": "Advanced Techniques in Molecular Science",
+        "subjectCode": "BCMB30010"
+    },
+    {
+        "subjectName": "Practical Chemistry 2",
+        "subjectCode": "CHEM20019"
+    },
+    {
+        "subjectName": "Chemical Research Project",
+        "subjectCode": "CHEM30013"
+    },
+    {
+        "subjectName": "Disabilitiy, Diversity and Inclusion",
+        "subjectCode": "UNIB10026"
+    },
+    {
+        "subjectName": "Complex Functions in Neuroscience",
+        "subjectCode": "NEUR30004"
+    },
+    {
+        "subjectName": "Developmental Neurobiology",
+        "subjectCode": "NEUR30005"
+    },
+    {
+        "subjectName": "Free Speech and Media Law",
+        "subjectCode": "BLAW10002"
+    },
+    {
+        "subjectName": "Crime, Criminology, and Critique",
+        "subjectCode": "CRIM10001"
+    },
+    {
+        "subjectName": "Cybercrime and Digital Criminology",
+        "subjectCode": "CRIM20007"
+    },
+    {
+        "subjectName": "Policing",
+        "subjectCode": "CRIM20003"
+    },
+    {
+        "subjectName": "Criminal Law and Political Justice",
+        "subjectCode": "CRIM20002"
+    },
+    {
+        "subjectName": "Young People, Crime and Justice",
+        "subjectCode": "CRIM30011"
+    },
+
+    {
         "subjectName": "Chemistry 1",
         "subjectCode": "CHEM10003"
     },
@@ -4212,10 +4345,6 @@
         "subjectCode": "POLS30019"
     },
     {
-        "subjectName": "Chinese 10",
-        "subjectCode": "CHIN20013"
-    },
-    {
         "subjectName": "Methods in Agrifood Biotechnology",
         "subjectCode": "BTCH30001"
     },
@@ -7542,10 +7671,6 @@
     {
         "subjectName": "Applications in Animal Health B",
         "subjectCode": "VETS90061"
-    },
-    {
-        "subjectName": "Chinese 10",
-        "subjectCode": "CHIN30028"
     },
     {
         "subjectName": "Business Analysis & Decision Making",
@@ -13034,10 +13159,6 @@
     {
         "subjectName": "Writing About Art and the Moving Image",
         "subjectCode": "AHIS90008"
-    },
-    {
-        "subjectName": "Chinese 10",
-        "subjectCode": "CHIN30028"
     },
     {
         "subjectName": "Business Analysis & Decision Making",
@@ -20050,10 +20171,6 @@
     {
         "subjectName": "Biology: Life's Complexity",
         "subjectCode": "BIOL10011"
-    },
-    {
-        "subjectName": "Chinese 10",
-        "subjectCode": "CHIN10002"
     },
     {
         "subjectName": "Understanding Planet Earth",
