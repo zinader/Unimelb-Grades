@@ -14284,10 +14284,6 @@
         "subjectCode": "ITAL10004"
     },
     {
-        "subjectName": "Elements of Data Processing",
-        "subjectCode": "COMP20008"
-    },
-    {
         "subjectName": "Data Analysis 1",
         "subjectCode": "MAST10010"
     },
@@ -14952,7 +14948,7 @@
         "subjectCode": "ATOC10001"
     },
     {
-        "subjectName": "Engineering Technology and Society",
+        "subjectName": "Engineering Systems Design 1",
         "subjectCode": "ENGR10004"
     },
     {
