@@ -2,7 +2,8 @@ import "./App.css";
 import { Route, BrowserRouter as Router } from "react-router-dom";
 import MainComponent from "./components/MainComponent";
 import ScoreComponent from "./components/ScoreComponent";
-import BreadthComponent from "./components/BreadthComponent";
+import WamBoosterComponent from "./components/WamBooster/WamBoosterComponent";
+import WamBoosterScoreComponent from "./components/WamBooster/WamboosterScoreComponent";
 
 function App() {
   console.log(
@@ -16,9 +17,14 @@ function App() {
         <Route path="/" exact component={MainComponent} />
         <Route path="/subjects/:name/:code" exact component={ScoreComponent} />
         <Route
+          path="/subjects/wamboosters/:name/:code"
+          exact
+          component={WamBoosterScoreComponent}
+        />
+        <Route
           path="/subjects/wamboosters"
           exact
-          component={BreadthComponent}
+          component={WamBoosterComponent}
         />
       </Router>
     </div>

@@ -18,6 +18,12 @@ a {
   outline: none;
 }
 
+.form-control:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
 .missing-form:hover {
   text-decoration: none;
   color: #8498b5;
@@ -660,7 +666,7 @@ a {
 .wam-booster-heading {
   margin-left: 25px;
   margin-top: 20px;
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   margin-bottom: 30px;
 }
 
@@ -669,9 +675,10 @@ a {
 }
 
 .mark-wam-btn button {
+  display: flex;
   background-color: rgb(23, 42, 69) !important;
-  margin-top: 0px;
-  margin-left: 30px;
+  margin-top: 10px;
+
   border-radius: 6px;
   border: none;
   padding: 10px;
@@ -684,6 +691,7 @@ a {
 }
 
 .warning {
+  margin-left: 15px;
   font-size: 16px;
   color: aqua;
   font-weight: 700;
@@ -800,7 +808,7 @@ a {
   }
 
   .loader-graph {
-    top: 400px;
+    top: 520px;
     left: 180px;
   }
   .no-results {
@@ -1011,5 +1019,28 @@ a {
 
   .breadth-recommendations a {
     margin-left: 15px;
+  }
+
+  .mark-wam-btn button {
+    display: block;
+    background-color: rgb(23, 42, 69) !important;
+    margin-top: 15px;
+    margin-left: 0px;
+    border-radius: 6px;
+    border: none;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.698);
+    font-size: 1rem;
+  }
+
+  .mark-wam-btn button:hover {
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+  }
+
+  .warning {
+    width: 260px;
+    font-size: 13px;
+    color: aqua;
+    font-weight: 700;
   }
 }
