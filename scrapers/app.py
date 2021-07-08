@@ -27,11 +27,37 @@ with open("data.json", "w") as outfile:
         subject_name = re.findall('-.*?<', i)[0][2:-1]
         #print(subject_name)
         
-        if(subject_semester=="SM1" or )
+        if(subject_semester=="SM1" or subject_semester=="SM2" or subject_semester=="SUM" or subject_semester=="WIN"):
+            a = " { \"subjectName\": \"" + subject_name + "\", \"subjectCode\": \"" + subject_code + "\",\"semester\": [\"" + subject_semester + "\"] }"
+            d = json.loads(a)
+            all_json_objects.append(d)
         
-        a = " { \"subjectName\": \"" + subject_name + "\", \"subjectCode\": \"" + subject_code + "\",\"semester\": \"" + subject_semester + "\" }"
-        d = json.loads(a)
-        all_json_objects.append(d)
   
 
     json.dump(all_json_objects, outfile, indent=4)
+    
+    
+# algorithm to merge (not working)   
+    
+# few_subjects = []
+
+# i = 0
+# count = 0
+    
+# while (i < len(all_json_objects)-1):
+
+#     semesters = []
+#     count = 0
+#     semesters.append(all_json_objects[i]["semester"])
+#     while(count<4):
+#         if(all_json_objects[i]["subjectName"]==all_json_objects[i+count+1]["subjectName"]):
+#             semesters.append(all_json_objects[i+count+1]["semester"])
+#             count+=1
+#         else:
+#             b = " { \"subjectName\": \"" + all_json_objects[i]["subjectName"] + "\", \"subjectCode\": \"" + all_json_objects[i]["subjectCode"] + "\",\"semester\": " + str(semesters) + " }"
+#             d = json.loads(a)
+#             few_subjects.append(d)
+#             i = i + count + 1
+#             break
+        
+# print(few_subjects)
