@@ -23,33 +23,33 @@ const FeedbackComponent = withRouter((props) => {
     fetchData();
   }, []);
 
-  const handleUpvote = (upvotes, id) => {
-    const sendRequest = async () => {
-      await api
-        .post("/feedback/upvote/" + upvotes, {
-          subjectCode,
-          id,
-        })
-        .then((res) => {
-          window.location.reload();
-        }, []);
-    };
-    sendRequest();
-  };
+  // const handleUpvote = (upvotes, id) => {
+  //   const sendRequest = async () => {
+  //     await api
+  //       .post("/feedback/upvote/" + upvotes, {
+  //         subjectCode,
+  //         id,
+  //       })
+  //       .then((res) => {
+  //         window.location.reload();
+  //       });
+  //   };
+  //   sendRequest();
+  // };
 
-  const handleDownvote = (upvotes, id) => {
-    const sendRequest = async () => {
-      await api
-        .post("/feedback/downvote/" + upvotes, {
-          subjectCode,
-          id,
-        })
-        .then((res) => {
-          window.location.reload();
-        });
-    };
-    sendRequest();
-  };
+  // const handleDownvote = (upvotes, id) => {
+  //   const sendRequest = async () => {
+  //     await api
+  //       .post("/feedback/downvote/" + upvotes, {
+  //         subjectCode,
+  //         id,
+  //       })
+  //       .then((res) => {
+  //         window.location.reload();
+  //       });
+  //   };
+  //   sendRequest();
+  // };
 
   // const handleReport = (id) => {
   //   const sendRequest = async () => {
@@ -93,20 +93,20 @@ const FeedbackComponent = withRouter((props) => {
               <div className="feedback-comment">
                 <h1>{data.comment}</h1>
                 <div className="feedback-buttons">
-                  <div className="upvote-button">
+                  {/* <div className="upvote-button">
                     <button
                       onClick={() => handleUpvote(data.upvotes, data._id)}
                     >
                       Upvote
                     </button>
-                  </div>
-                  <div className="downvote-button">
+                  </div> */}
+                  {/* <div className="downvote-button">
                     <button
                       onClick={() => handleDownvote(data.upvotes, data._id)}
                     >
                       Downvote
                     </button>
-                  </div>
+                  </div> */}
                   {/* <div className="report-comment">
                     <button onClick={() => handleReport(data._id)}>
                       Report
@@ -114,9 +114,9 @@ const FeedbackComponent = withRouter((props) => {
                   </div> */}
                 </div>
               </div>
-              <div className="upvotes">
+              {/* <div className="upvotes">
                 <h2>{data.upvotes}</h2>
-              </div>
+              </div> */}
             </div>
           </div>
         ))}

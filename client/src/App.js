@@ -2,6 +2,7 @@ import "./App.css";
 import { Route, BrowserRouter as Router } from "react-router-dom";
 import MainComponent from "./components/MainComponent";
 import ScoreComponent from "./components/ScoreComponent";
+import BreadthComponent from "./components/BreadthComponent";
 
 function App() {
   console.log(
@@ -14,6 +15,11 @@ function App() {
       <Router>
         <Route path="/" exact component={MainComponent} />
         <Route path="/subjects/:name/:code" exact component={ScoreComponent} />
+        <Route
+          path="/subjects/wamboosters"
+          exact
+          component={BreadthComponent}
+        />
       </Router>
     </div>
   );

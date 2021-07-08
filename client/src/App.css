@@ -117,11 +117,6 @@ a {
   font-size: 20px;
 }
 
-.search-input:hover {
-  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
-  transition: 0.6ms;
-}
-
 /* Loader */
 
 .loader {
@@ -504,6 +499,7 @@ a {
 }
 
 .feedback-comment h1 {
+  color: aqua;
   font-size: 25px;
 }
 
@@ -642,6 +638,32 @@ a {
   color: aliceblue;
 }
 
+.breadth-recommendations button {
+  background-color: rgb(23, 42, 69);
+  margin-left: 35px;
+  border-radius: 6px;
+  border: none;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.698);
+  padding-left: 5px;
+  width: 200px;
+  height: 42px;
+}
+
+.breadth-recommendations button:hover {
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+  transition: 0.6ms;
+}
+
+.wam-booster-heading {
+  margin-left: 25px;
+  margin-top: 20px;
+  font-size: 1.7rem;
+  margin-bottom: 30px;
+}
+
 @media only screen and (max-width: 768px) {
   .heading {
     width: 180px;
@@ -721,6 +743,7 @@ a {
   }
   .subject-scores-length h3 {
     font-size: 0.9rem;
+    width: 150px;
   }
 
   /* Footer */
@@ -866,7 +889,7 @@ a {
   .feedback-comment {
     margin-top: 15px;
     margin-left: 20px;
-    width: 55vw;
+    width: 60vw;
     font-size: 10px;
   }
 
@@ -937,5 +960,31 @@ a {
   .feedback-heading {
     margin-left: 25px;
     font-size: 25px;
+  }
+
+  .breadth-recommendations button {
+    background-color: rgb(23, 42, 69);
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-bottom: 15px;
+    text-align: inherit;
+    border-radius: 6px;
+    border: none;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.698);
+    padding-left: 5px;
+    width: 220px;
+    height: 45px;
+  }
+
+  .breadth-recommendations button:hover {
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+    transition: 0.6ms;
+  }
+
+  .breadth-recommendations a {
+    margin-left: 15px;
   }
 }

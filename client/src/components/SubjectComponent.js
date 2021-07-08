@@ -118,6 +118,19 @@ const SubjectComponent = withRouter(() => {
                 setTrigger={toggletoRemoveBlur}
               />
             </span>
+            <span className="breadth-recommendations">
+              <button classname="add-score-btn">
+                <Link
+                  to={`/subjects/wamboosters`}
+                  style={{
+                    textDecoration: "none",
+                    color: "rgba(255, 255, 255, 0.698)",
+                  }}
+                >
+                  WAM Boosters
+                </Link>
+              </button>
+            </span>
           </label>
           <div>
             <h2>Top Subjects</h2>

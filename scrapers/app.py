@@ -8,56 +8,37 @@ import numpy as np
 import json
 
 
-all_subjects = []
-all_json_objects = []
+# Unimelb Handbook Link
 
-with open("subjects.txt", "r") as file:
-    for line in file:
-        result = re.findall('>.*?<', line)
-        all_subjects.append(result[0][1:])
-        
+URL = "https://handbook.unimelb.edu.au/search?types%5B%5D=subject&year=2021&subject_level_type%5B%5D=all&study_periods%5B%5D=all&area_of_study%5B%5D=all&org_unit%5B%5D=all&campus_and_attendance_mode%5B%5D=all&page=1&sort=_score%7Cdesc"
+z = 1
+k = 0
 
-with open("data.json", "w") as outfile:
+with open('data.json', 'w', newline='') as file:
     
-    for i in all_subjects:
-        subject_code = re.findall('.*?/', i)[0][:-1]
-        #print(subject_code)
-        subject_semester = re.findall('/.*? ', i)[0][:-1].split('/')[-1]
-        #print(subject_semester)
-        subject_name = re.findall('-.*?<', i)[0][2:-1]
-        #print(subject_name)
-        
-        if(subject_semester=="SM1" or subject_semester=="SM2" or subject_semester=="SUM" or subject_semester=="WIN"):
-            a = " { \"subjectName\": \"" + subject_name + "\", \"subjectCode\": \"" + subject_code + "\",\"semester\": [\"" + subject_semester + "\"] }"
+    subjects = []
+    
+    # To be set 317 (317 pages of subjects in the handbook)
+    
+    while(z<=317):
+        r = requests.get(URL)
+        soup = BeautifulSoup(r.content, 'html.parser') 
+        z = z + 1
+        majors = {}
+        links = soup.findAll('div',class_='search-result-item__name')
+
+
+        for i in links:
+            k = k +1
+            c = i.text
+            subject_name = c[:-9]
+            subject_code = c[-9:]
+            a = " { \"subjectName\": \"" + subject_name + "\", \"subjectCode\": \"" + subject_code + "\" }"
             d = json.loads(a)
-            all_json_objects.append(d)
-        
-  
+            subjects.append(d)
+            
+            
 
-    json.dump(all_json_objects, outfile, indent=4)
-    
-    
-# algorithm to merge (not working)   
-    
-# few_subjects = []
+        URL = "https://handbook.unimelb.edu.au/search?types%5B%5D=subject&year=2021&subject_level_type%5B%5D=all&study_periods%5B%5D=all&area_of_study%5B%5D=all&org_unit%5B%5D=all&campus_and_attendance_mode%5B%5D=all&page=" + str(z) + "&sort=_score%7Cdesc"
 
-# i = 0
-# count = 0
-    
-# while (i < len(all_json_objects)-1):
-
-#     semesters = []
-#     count = 0
-#     semesters.append(all_json_objects[i]["semester"])
-#     while(count<4):
-#         if(all_json_objects[i]["subjectName"]==all_json_objects[i+count+1]["subjectName"]):
-#             semesters.append(all_json_objects[i+count+1]["semester"])
-#             count+=1
-#         else:
-#             b = " { \"subjectName\": \"" + all_json_objects[i]["subjectName"] + "\", \"subjectCode\": \"" + all_json_objects[i]["subjectCode"] + "\",\"semester\": " + str(semesters) + " }"
-#             d = json.loads(a)
-#             few_subjects.append(d)
-#             i = i + count + 1
-#             break
-        
-# print(few_subjects)
+    json.dump(subjects, file, indent=4)
