@@ -259,7 +259,7 @@ a {
 
 .subjectname-input {
   background-color: rgb(10, 25, 47) !important;
-  color: aliceblue;
+  color: aliceblue !important;
   border-radius: 6px;
   margin-left: 15px;
   margin-right: 15px;
@@ -279,7 +279,7 @@ a {
 
 .score-input {
   background-color: rgb(10, 25, 47);
-  color: aliceblue;
+  color: aliceblue !important;
   border-radius: 6px;
   margin-left: 15px;
   margin-right: 15px;
@@ -299,6 +299,14 @@ a {
 .score-input {
   border: none;
   outline: none;
+}
+
+.score-input:focus {
+  background-color: rgb(10, 25, 47);
+}
+
+.score-input::selection {
+  background-color: rgb(10, 25, 47);
 }
 
 .form-row {

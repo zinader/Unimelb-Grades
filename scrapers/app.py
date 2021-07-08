@@ -8,37 +8,30 @@ import numpy as np
 import json
 
 
-# Unimelb Handbook Link
+all_subjects = []
+all_json_objects = []
 
-URL = "https://handbook.unimelb.edu.au/search?types%5B%5D=subject&year=2021&subject_level_type%5B%5D=all&study_periods%5B%5D=all&area_of_study%5B%5D=all&org_unit%5B%5D=all&campus_and_attendance_mode%5B%5D=all&page=1&sort=_score%7Cdesc"
-z = 1
-k = 0
+with open("subjects.txt", "r") as file:
+    for line in file:
+        result = re.findall('>.*?<', line)
+        all_subjects.append(result[0][1:])
+        
 
-with open('data.json', 'w', newline='') as file:
+with open("data.json", "w") as outfile:
     
-    subjects = []
-    
-    # To be set 317 (317 pages of subjects in the handbook)
-    
-    while(z<=317):
-        r = requests.get(URL)
-        soup = BeautifulSoup(r.content, 'html.parser') 
-        z = z + 1
-        majors = {}
-        links = soup.findAll('div',class_='search-result-item__name')
+    for i in all_subjects:
+        subject_code = re.findall('.*?/', i)[0][:-1]
+        #print(subject_code)
+        subject_semester = re.findall('/.*? ', i)[0][:-1].split('/')[-1]
+        #print(subject_semester)
+        subject_name = re.findall('-.*?<', i)[0][2:-1]
+        #print(subject_name)
+        
+        if(subject_semester=="SM1" or )
+        
+        a = " { \"subjectName\": \"" + subject_name + "\", \"subjectCode\": \"" + subject_code + "\",\"semester\": \"" + subject_semester + "\" }"
+        d = json.loads(a)
+        all_json_objects.append(d)
+  
 
-
-        for i in links:
-            k = k +1
-            c = i.text
-            subject_name = c[:-9]
-            subject_code = c[-9:]
-            a = " { \"subjectName\": \"" + subject_name + "\", \"subjectCode\": \"" + subject_code + "\" }"
-            d = json.loads(a)
-            subjects.append(d)
-            
-            
-
-        URL = "https://handbook.unimelb.edu.au/search?types%5B%5D=subject&year=2021&subject_level_type%5B%5D=all&study_periods%5B%5D=all&area_of_study%5B%5D=all&org_unit%5B%5D=all&campus_and_attendance_mode%5B%5D=all&page=" + str(z) + "&sort=_score%7Cdesc"
-
-    json.dump(subjects, file, indent=4)
+    json.dump(all_json_objects, outfile, indent=4)
