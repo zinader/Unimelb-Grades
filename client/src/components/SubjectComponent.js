@@ -119,17 +119,15 @@ const SubjectComponent = withRouter(() => {
               />
             </span>
             <span className="breadth-recommendations">
-              <button classname="add-score-btn">
-                <Link
-                  to={`/subjects/wamboosters`}
-                  style={{
-                    textDecoration: "none",
-                    color: "rgba(255, 255, 255, 0.698)",
-                  }}
-                >
-                  WAM Boosters
-                </Link>
-              </button>
+              <Link
+                to={`/subjects/wamboosters`}
+                style={{
+                  textDecoration: "none",
+                  color: "rgba(255, 255, 255, 0.698)",
+                }}
+              >
+                <button classname="add-score-btn">WAM Boosters</button>
+              </Link>
             </span>
           </label>
           <div>

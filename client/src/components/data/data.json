@@ -669,8 +669,92 @@
         "subjectCode": "PSYT90006"
     },
     {
+        "subjectName": "Internet Communication",
+        "subjectCode": "MECM20003"
+    },
+    {
+        "subjectName": "Media Futures and New Technologies",
+        "subjectCode": "MECM30004"
+    },
+    {
+        "subjectName": "Practical Archeology",
+        "subjectCode": "ANCW30023"
+    },
+    {
+        "subjectName": "Biological Psychological",
+        "subjectCode": "PSYC20006"
+    },
+    {
+        "subjectName": "Consumer Behaviour",
+        "subjectCode": "MKTG20001"
+    },
+    {
+        "subjectName": "Classical Mythology",
+        "subjectCode": "ANCW20015"
+    },
+    {
+        "subjectName": "Archaeology of the Classical Greek World",
+        "subjectCode": "ANCW20027"
+    },
+    {
+        "subjectName": "Interpreting Material Culture",
+        "subjectCode": "ANCW20028"
+    },
+    {
+        "subjectName": "Ancient Egyptian 4",
+        "subjectCode": "ANCW20024"
+    },
+    {
+        "subjectName": "The Rise and Fall of the Roman Republic",
+        "subjectCode": "ANCW20019"
+    },
+    {
+        "subjectName": "Italian Cultural Studies A",
+        "subjectCode": "ITAL20009"
+    },
+    {
+        "subjectName": "Italian 4",
+        "subjectCode": "ITAL20008"
+    },
+    {
+        "subjectName": "Italian 5A",
+        "subjectCode": "ITAL30003"
+    },
+    {
         "subjectName": "Research Project",
         "subjectCode": "DENT40009"
+    },
+    {
+        "subjectName": "European Modernism",
+        "subjectCode": "EURO20002"
+    },
+    {
+        "subjectName": "A Taste of Europe: Melbourne Intensive",
+        "subjectCode": "EURO30006"
+    },
+    {
+        "subjectName": "Introduction to Language Translation",
+        "subjectCode": "ARTS30002"
+    },
+    {
+        "subjectName": "Chinese 3",
+        "subjectCode": "CHIN20001"
+    },
+    {
+        "subjectName": "Taiwan & Beyond: Chinese Settler Culture",
+        "subjectCode": "CHIN30002"
+    },
+    {
+        "subjectName": "Second Language Learning and Teaching",
+        "subjectCode": "LING20003"
+    },
+    {
+        "subjectName": "Australian Indigenous Languages",
+        "subjectCode": "LING30014"
+    },
+    {
+        "subjectName": "First Language Acquisition",
+        "subjectCode": "LING30003"
     },
     {
         "subjectName": "Transnat'l Corporations: Rights & Duties",
@@ -679,6 +763,26 @@
     {
         "subjectName": "Management in Development A",
         "subjectCode": "DEVT90044"
+    },
+    {
+        "subjectName": "Deafness and Communication",
+        "subjectCode": "EDUC20069"
+    },
+    {
+        "subjectName": "Media and Urban Culture in Asia",
+        "subjectCode": "ASIA20001"
+    },
+    {
+        "subjectName": "Physics 1",
+        "subjectCode": "PHYC10003"
+    },
+    {
+        "subjectName": "Biomolecules and Cells",
+        "subjectCode": "BIOL10002"
+    },
+    {
+        "subjectName": "Development of the Thinking Child",
+        "subjectCode": "PSYC30019"
     },
     {
         "subjectName": "Practice of Public Health Leadership",
