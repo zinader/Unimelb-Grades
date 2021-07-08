@@ -112,6 +112,27 @@ router.route("/feedback/report").post((req, res) => {
     );
 });
 
+// Mark a subject as a wambooster
+
+router.route("/addwambooster").post((req, res) => {
+  Subject.findOneAndUpdate(
+    { subjectCode: req.body.subjectCode },
+    { $inc: { wamBooster: 1 } }
+  )
+    .then((result) =>
+      res.json({
+        success: true,
+        data: result,
+      })
+    )
+    .catch((err) =>
+      res.json({
+        success: false,
+        error: err,
+      })
+    );
+});
+
 // Get particular subject scores
 router.route("/item/:code").get((req, res) => {
   Subject.find({
@@ -136,6 +157,27 @@ router.route("/item/:code").get((req, res) => {
 router.route("/").get((req, res) => {
   Subject.find()
     .sort({ scores: -1 })
+    .then((result) =>
+      res.json({
+        success: true,
+        data: result,
+      })
+    )
+    .catch((err) =>
+      res.json({
+        success: false,
+        error: err,
+      })
+    );
+});
+
+// Get all breadths
+
+router.route("/wamboosters").get((req, res) => {
+  Subject.find({
+    wamBooster: { $gt: 0 },
+  })
+    .sort({ wamBooster: -1 })
     .then((result) =>
       res.json({
         success: true,

@@ -14,6 +14,7 @@ const subjectSchema = new Schema(
         report: { type: Boolean, default: false },
       },
     ],
+    wamBooster: { type: Number, default: 1 },
   },
   {
     timestamps: true,
