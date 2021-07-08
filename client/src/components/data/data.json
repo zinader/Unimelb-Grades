@@ -265,30 +265,6 @@
         "subjectCode": "EDUC90989"
     },
     {
-        "subjectName": "Planning and Development Law",
-        "subjectCode": "LAWS70349"
-    },
-    {
-        "subjectName": "Forms and Politics in Architecture",
-        "subjectCode": "ABPL90357"
-    },
-    {
-        "subjectName": "Animal Production Systems 1",
-        "subjectCode": "VETS30031"
-    },
-    {
-        "subjectName": "Disaster Law and Climate Adaptation",
-        "subjectCode": "LAWS90088"
-    },
-    {
-        "subjectName": "Leading Change for Student Wellbeing",
-        "subjectCode": "EDUC90629"
-    },
-    {
-        "subjectName": "Digital Product Management",
-        "subjectCode": "BUSA90527"
-    },
-    {
         "subjectName": "Prosecuting the War on Terror",
         "subjectCode": "LAWS70327"
     },
@@ -771,10 +747,6 @@
     {
         "subjectName": "Media and Urban Culture in Asia",
         "subjectCode": "ASIA20001"
-    },
-    {
-        "subjectName": "Physics 1",
-        "subjectCode": "PHYC10003"
     },
     {
         "subjectName": "Biomolecules and Cells",
@@ -5632,22 +5604,7 @@
         "subjectName": "International Law: Uncensored History",
         "subjectCode": "LAWS90128"
     },
-    {
-        "subjectName": "The Cosmopolitan Imaginary",
-        "subjectCode": "CULS90011"
-    },
-    {
-        "subjectName": "Writing and Rewriting",
-        "subjectCode": "FLTV70044"
-    },
-    {
-        "subjectName": "Environmental Management ISO 14000",
-        "subjectCode": "ENEN90005"
-    },
-    {
-        "subjectName": "Investment, Regulation and Development",
-        "subjectCode": "LAWS70122"
-    },
+    
     {
         "subjectName": "Economics Research Report Part 1",
         "subjectCode": "ECON90071"
@@ -10640,22 +10597,7 @@
         "subjectName": "Principles of Veterinary Bioscience",
         "subjectCode": "VETS90062"
     },
-    {
-        "subjectName": "The Cosmopolitan Imaginary",
-        "subjectCode": "CULS90011"
-    },
-    {
-        "subjectName": "Writing and Rewriting",
-        "subjectCode": "FLTV70044"
-    },
-    {
-        "subjectName": "Environmental Management ISO 14000",
-        "subjectCode": "ENEN90005"
-    },
-    {
-        "subjectName": "Investment, Regulation and Development",
-        "subjectCode": "LAWS70122"
-    },
+    
     {
         "subjectName": "Economics Research Report Part 1",
         "subjectCode": "ECON90071"
@@ -12701,24 +12643,8 @@
         "subjectCode": "ENGL40003"
     },
     {
-        "subjectName": "Music Internship",
-        "subjectCode": "MUSI40091"
-    },
-    {
-        "subjectName": "Communication Networks",
-        "subjectCode": "ELEN90061"
-    },
-    {
         "subjectName": "Landscape Studio 4 Strategies",
         "subjectCode": "ABPL90170"
-    },
-    {
-        "subjectName": "Research Project (MMS)",
-        "subjectCode": "BIOM90016"
-    },
-    {
-        "subjectName": "Sustainability Governance and Leadership",
-        "subjectCode": "MULT90004"
     },
     {
         "subjectName": "Research Methods",
@@ -13384,10 +13310,7 @@
         "subjectName": "Major Research Project",
         "subjectCode": "AGRI90072"
     },
-    {
-        "subjectName": "Music Internship",
-        "subjectCode": "MUSI40091"
-    },
+    
     {
         "subjectName": "Communication Networks",
         "subjectCode": "ELEN90061"
@@ -13407,14 +13330,6 @@
     {
         "subjectName": "Environmental Sci. Research Project Pt 1",
         "subjectCode": "EVSC90034"
-    },
-    {
-        "subjectName": "Research Project (MMS)",
-        "subjectCode": "BIOM90016"
-    },
-    {
-        "subjectName": "Sustainability Governance and Leadership",
-        "subjectCode": "MULT90004"
     },
     {
         "subjectName": "Special Studies in Food",
@@ -14423,10 +14338,6 @@
     {
         "subjectName": "Intensive Spanish 3 & 4",
         "subjectCode": "SPAN20027"
-    },
-    {
-        "subjectName": "Physics 1",
-        "subjectCode": "PHYC10003"
     },
     {
         "subjectName": "Construction Management",
@@ -17705,24 +17616,8 @@
         "subjectCode": "ENGL40003"
     },
     {
-        "subjectName": "Music Internship",
-        "subjectCode": "MUSI40091"
-    },
-    {
-        "subjectName": "Communication Networks",
-        "subjectCode": "ELEN90061"
-    },
-    {
         "subjectName": "Landscape Studio 4 Strategies",
         "subjectCode": "ABPL90170"
-    },
-    {
-        "subjectName": "Research Project (MMS)",
-        "subjectCode": "BIOM90016"
-    },
-    {
-        "subjectName": "Sustainability Governance and Leadership",
-        "subjectCode": "MULT90004"
     },
     {
         "subjectName": "Journalism Project (Extended) Part 2",
@@ -18395,10 +18290,6 @@
     {
         "subjectName": "Music Internship",
         "subjectCode": "MUSI40091"
-    },
-    {
-        "subjectName": "Communication Networks",
-        "subjectCode": "ELEN90061"
     },
     {
         "subjectName": "Survival Analysis & Regression for Rates",
