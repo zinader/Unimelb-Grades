@@ -24,7 +24,7 @@ app.use("/subjects", subjectsRouter);
 console.log("Connecting to MongoDB");
 
 mongoose.connect(
-  "mongodb+srv://<username>:<password>@cluster0.evqqp.mongodb.net/db1?retryWrites=true&w=majority",
+  process.env.MONGO_URL || 'mongodb://localhost:27017/unimelb-grades',
   { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true },
   (err) => {
     if (err) return console.error(err);
