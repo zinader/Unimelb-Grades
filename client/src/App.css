@@ -419,6 +419,10 @@ a {
   font-size: 26px;
 }
 
+.graph-links {
+  display: flex;
+}
+
 .chart {
   background-color: aliceblue;
   border-radius: 6px;
@@ -624,6 +628,29 @@ a {
   outline: none;
 }
 
+.feedback-submit-button button:focus,
+button:active,
+button::selection {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.link-input {
+  background-color: rgb(10, 25, 47);
+  border: none;
+  border-radius: 6px;
+  margin-right: 20px;
+  color: aliceblue !important;
+}
+
+.link-input:focus {
+  background-color: rgb(10, 25, 47);
+  border: none;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+
 .add-feedback-form-name {
   margin-left: 25px;
   font-size: 1.3rem;
@@ -697,6 +724,87 @@ a {
   font-weight: 700;
 }
 
+.important-links {
+  position: relative;
+  margin-top: 30px;
+  margin-left: 100px;
+  height: 380px;
+  width: 40vw;
+  background-color: rgb(23, 42, 69);
+  border-radius: 6px;
+}
+
+.important-links-heading {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 25px;
+}
+
+.all-links {
+  border-radius: 6px !important;
+  margin-top: 10px;
+  margin-left: 30px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overflow-x: auto;
+  height: 200px;
+  width: 500px;
+}
+
+.individual-link {
+  border-radius: 6px;
+  padding: 10px;
+  height: 40px;
+  width: 70vw;
+  margin-bottom: 20px;
+  background-color: rgb(10, 25, 47) !important;
+}
+
+.individual-link:hover {
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+  transition: 0.6ms;
+}
+
+.all-links a:hover {
+  text-decoration: none;
+}
+
+.individual-link h6 {
+  color: aqua;
+  margin-left: 5px;
+}
+
+.link-submit-button button {
+  font-size: 0.9rem;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  padding: 10px !important;
+  color: rgba(255, 255, 255, 0.698);
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+  background-color: rgb(10, 25, 47);
+  padding: 5px;
+}
+
+.link-submit-button button:hover {
+  background-color: rgb(23, 42, 69);
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+  transition: 0.6ms;
+}
+
+.link-submit-button button:focus {
+  background-color: rgb(23, 42, 69);
+  outline: none;
+  border: none;
+}
+
+.link-submit-button button::selection {
+  background-color: rgb(23, 42, 69);
+  outline: none;
+  border: none;
+}
+
 @media only screen and (max-width: 768px) {
   .heading {
     width: 180px;
@@ -736,7 +844,7 @@ a {
   }
 
   .form-row > div {
-    height: 50px;
+    height: 100px;
   }
 
   .form-name {
@@ -938,7 +1046,7 @@ a {
     display: flex;
     margin-top: 20px;
     margin-left: 40px;
-    height: 150px;
+    height: 200px;
     margin-bottom: 60px;
     border-radius: 6px;
     background-color: rgb(23, 42, 69);
@@ -985,7 +1093,9 @@ a {
 
   .feedback-input {
     background-color: rgb(10, 25, 47);
-    width: 100px;
+    width: 230px;
+    margin-top: 10px;
+    margin-left: 20px;
     border: none;
     margin-right: 20px;
     color: aliceblue;
@@ -1042,5 +1152,18 @@ a {
     font-size: 13px;
     color: aqua;
     font-weight: 700;
+  }
+
+  .important-links {
+    display: none;
+  }
+  .form-inside {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .important-links {
+    display: none;
   }
 }

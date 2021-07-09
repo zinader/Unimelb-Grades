@@ -5,23 +5,34 @@ import { api } from "../services/api";
 
 const FeedbackComponent = withRouter((props) => {
   const [subjectCode] = useState(props.data);
-  const [allfeedback, setAllFeedback] = useState([]);
+  const [allfeedback, setAllFeedback] = useState(props.feedback);
   const [comment, setComment] = useState("");
 
-  useEffect(() => {
-    const nonReportedFeedback = [];
+  // useEffect(() => {
+  //   const nonReportedFeedback = [];
 
-    const fetchData = async () => {
-      const results = await api.get("/item/" + props.data);
-      for (let i of results?.data?.data[0]?.feedback) {
-        if (i.report !== true) {
-          nonReportedFeedback.push(i);
-        }
+  //   const fetchData = async () => {
+  //     const results = await api.get("/item/" + props.data);
+  //     for (let i of results?.data?.data[0]?.feedback) {
+  //       if (i.report !== true) {
+  //         nonReportedFeedback.push(i);
+  //       }
+  //     }
+  //     setAllFeedback(nonReportedFeedback);
+  //   };
+  //   fetchData();
+  // }, []);
+
+  const fetchData = async () => {
+    const nonReportedFeedback = [];
+    const results = await api.get("/item/" + props.data);
+    for (let i of results?.data?.data[0]?.feedback) {
+      if (i.report !== true) {
+        nonReportedFeedback.push(i);
       }
-      setAllFeedback(nonReportedFeedback);
-    };
-    fetchData();
-  }, []);
+    }
+    setAllFeedback(nonReportedFeedback);
+  };
 
   // const handleUpvote = (upvotes, id) => {
   //   const sendRequest = async () => {
@@ -76,16 +87,19 @@ const FeedbackComponent = withRouter((props) => {
           feedback: [{ comment: comment }],
         })
         .then((res) => {
-          window.location.reload();
+          fetchData();
         });
     };
-    sendRequest();
-    setComment("");
+    if (comment.replace(/\s/g, "") !== "") {
+      sendRequest();
+    } else {
+      alert("Please check comment again.");
+    }
   };
 
   return (
     <div>
-      <div className="feedback-heading">Feedback & Resources</div>
+      <div className="feedback-heading">Feedback </div>
       <div className="feedback">
         {allfeedback?.map((data) => (
           <div className="col-md-4">
@@ -128,7 +142,7 @@ const FeedbackComponent = withRouter((props) => {
         </div> */}
         <Form onSubmit={handleSubmit}>
           <Form.Row>
-            <div>
+            <div className="form-inside">
               <Form.Label className="add-feedback-form-name">
                 Add feedback
               </Form.Label>

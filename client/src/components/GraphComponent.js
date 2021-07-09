@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Chart from "react-apexcharts";
+import { withRouter } from "react-router-dom";
 
-const GraphComponent = ({ scores }) => {
+import { Form, Button } from "react-bootstrap";
+import { linkSync } from "fs";
+import { api } from "../services/api";
+
+const GraphComponent = withRouter((props) => {
+  const [scores] = useState(props.scores);
+  const [links, setLinks] = useState(props.links);
+  const [link, setLink] = useState("");
+  const [subjectCode] = useState(props.code);
+
   let data2 = [0, 0, 0, 0, 0, 0];
 
   for (let i = 0; i < scores.length; i++) {
@@ -76,7 +86,7 @@ const GraphComponent = ({ scores }) => {
       },
       responsive: [
         {
-          breakpoint: 768,
+          breakpoint: 1100,
           options: {
             plotOptions: {
               bar: {
@@ -129,6 +139,31 @@ const GraphComponent = ({ scores }) => {
     ],
   };
 
+  const fetchData = async () => {
+    const results = await api.get("/item/" + subjectCode);
+    setLinks(results?.data?.data[0]?.links);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const sendRequest = async () => {
+      await api
+        .post("/addlinks", {
+          subjectCode,
+          link,
+        })
+        .then((res) => {
+          fetchData();
+        });
+    };
+
+    if (links.includes(link)) {
+      alert("Link already present!");
+    } else {
+      sendRequest();
+    }
+  };
+
   return (
     <div>
       <div className="average-score">
@@ -136,18 +171,67 @@ const GraphComponent = ({ scores }) => {
           <h2>Average score {averageScoreRounded}</h2>
         </div>
       </div>
-      <div className="chart">
-        <Chart
-          options={data.options}
-          series={data.series}
-          type="bar"
-          width="500"
-        />
+      <div className="graph-links">
+        <div className="chart">
+          <Chart
+            options={data.options}
+            series={data.series}
+            type="bar"
+            width="500"
+          />
+        </div>
+        <div className="important-links">
+          {" "}
+          <div className="important-links-heading">
+            <h3>Important Links</h3>
+          </div>
+          <div>
+            <Form onSubmit={handleSubmit}>
+              <Form.Row>
+                <div>
+                  <Form.Label className="add-feedback-form-name">
+                    Add link
+                  </Form.Label>
+
+                  <Form.Control
+                    className="link-input"
+                    required
+                    type="url"
+                    onChange={(e) => setLink(e.target.value)}
+                  />
+                </div>
+                <div className="link-submit-button">
+                  <Button
+                    className="mb-5 text-center"
+                    variant="primary"
+                    type="submit"
+                  >
+                    Submit
+                  </Button>
+                </div>
+              </Form.Row>
+            </Form>
+          </div>
+          {links.length > 0 ? (
+            <div className="all-links">
+              {links.map((data) => (
+                <a href={data} target="_blank">
+                  <div className="individual-link">
+                    <h6>{data}</h6>
+                  </div>
+                </a>
+              ))}
+            </div>
+          ) : (
+            <></>
+          )}
+        </div>
       </div>
+
       <br></br>
       <br></br>
     </div>
   );
-};
+});
 
 export default GraphComponent;

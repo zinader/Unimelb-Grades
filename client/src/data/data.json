@@ -12,6 +12,10 @@
         "subjectCode": "ARTS90029"
     },
     {
+        "subjectName": "Declarative Programming",
+        "subjectCode": "COMP30020"
+    },
+    {
         "subjectName": "Foundations of Physics",
         "subjectCode": "PHYC10009"
     },

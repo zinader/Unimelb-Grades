@@ -15,6 +15,9 @@ import Footer from "./Footer";
 const ScoreComponent = withRouter((props) => {
   const [subjectCode] = useState(props.match.params.code);
   const [scores, setScores] = useState([]);
+  const [links, setLinks] = useState([]);
+  const [feedback, setFeedback] = useState([]);
+
   const [loader, setLoader] = useState(true);
   const [buttonPopup, setButtonPopup] = useState(false);
 
@@ -22,6 +25,8 @@ const ScoreComponent = withRouter((props) => {
     const fetchData = async () => {
       const results = await api.get("/item/" + props.match.params.code);
       setScores(results?.data?.data[0]?.scores);
+      setLinks(results?.data?.data[0]?.links);
+      setFeedback(results?.data?.data[0]?.feedback);
       setLoader(false);
     };
     fetchData();
@@ -117,10 +122,17 @@ const ScoreComponent = withRouter((props) => {
             {scores.length > 0 ? (
               <div>
                 <div className="graph">
-                  <GraphComponent scores={scores} />
+                  <GraphComponent
+                    scores={scores}
+                    links={links}
+                    code={props.match.params.code}
+                  />
                 </div>
                 <div>
-                  <FeedbackComponent data={props.match.params.code} />
+                  <FeedbackComponent
+                    data={props.match.params.code}
+                    feedback={feedback}
+                  />
                 </div>
               </div>
             ) : (

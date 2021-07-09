@@ -26,7 +26,7 @@ const PromptForm = (props) => {
         });
     };
 
-    if (score.replace(/\s/g, "") !== "") {
+    if (score.replace(/\s/g, "") !== "" && isFinite(score)) {
       sendRequest();
     } else {
       alert("Please enter a valid number!");

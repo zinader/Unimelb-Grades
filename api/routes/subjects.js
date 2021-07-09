@@ -24,6 +24,28 @@ router.route("/").post((req, res) => {
     );
 });
 
+// Add links
+
+router.route("/addlinks").post((req, res) => {
+  Subject.findOneAndUpdate(
+    { subjectCode: req.body.subjectCode },
+    { $push: { links: req.body.link } },
+    { new: true }
+  )
+    .then((result) =>
+      res.json({
+        success: true,
+        data: result,
+      })
+    )
+    .catch((err) =>
+      res.json({
+        success: false,
+        error: err,
+      })
+    );
+});
+
 // Upvote Comment
 
 router.route("/feedback/upvote/:upvotes").post((req, res) => {

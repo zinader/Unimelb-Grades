@@ -158,7 +158,13 @@ const SubjectComponent = withRouter(() => {
                             <div className="subject-name">
                               <h1>{data.subjectName}</h1>
                               <div className="subject-scores-length">
-                                <h3>{data?.scores?.length} Results</h3>
+                                <h3>
+                                  {data?.scores?.length ? (
+                                    <>{data?.scores?.length} Results</>
+                                  ) : (
+                                    <></>
+                                  )}{" "}
+                                </h3>
                               </div>
                             </div>
                             <div className="subject-code">
