@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <p>
-        Created with <span>&hearts;</span> by{" "}
+        Created with <span>💙</span> by{" "}
         <a target="_blank" rel="noreferrer" href="https://github.com/zinader">
           Pulkit Aggarwal
         </a>{" "}

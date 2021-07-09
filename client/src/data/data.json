@@ -16,6 +16,38 @@
         "subjectCode": "COMP30020"
     },
     {
+        "subjectName": "Foundations of Design: Representation",
+        "subjectCode": "ARCH10001"
+    },
+    {
+        "subjectName": "Macroeconomics",
+        "subjectCode": "ECON30009"
+    },
+    {
+        "subjectName": "Imaging the Environment",
+        "subjectCode": "GEOM30009"
+    },
+    {
+        "subjectName": "Electrical Device Modelling",
+        "subjectCode": "ELEN30011"
+    },
+    {
+        "subjectName": "Electrical Network Analysis and Design",
+        "subjectCode": "ELEN30009"
+    },
+    {
+        "subjectName": "Foundations of Electrical Networks",
+        "subjectCode": "ELEN20005"
+    },
+    {
+        "subjectName": "Probability and Random Models",
+        "subjectCode": "ELEN90054"
+    },
+    {
+        "subjectName": "Microeconomics",
+        "subjectCode": "ECON30010"
+    },
+    {
         "subjectName": "Foundations of Physics",
         "subjectCode": "PHYC10009"
     },
