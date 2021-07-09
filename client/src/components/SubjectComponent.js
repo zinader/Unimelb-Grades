@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, withRouter } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
 
-import customData from "./data/data.json";
+import customData from "../data/data.json";
 import HashLoader from "react-spinners/HashLoader";
 import { api } from "../services/api";
 import PromptForm from "./PromptComponent";

@@ -10,6 +10,7 @@ import { api } from "../services/api";
 import Header from "./Header";
 import GraphComponent from "./GraphComponent";
 import FeedbackComponent from "./FeedbackComponent";
+import Footer from "./Footer";
 
 const ScoreComponent = withRouter((props) => {
   const [subjectCode] = useState(props.match.params.code);
