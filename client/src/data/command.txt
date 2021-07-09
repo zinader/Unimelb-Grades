@@ -1,1 +1,0 @@
-mongoexport --uri mongodb+srv://pulkit:wam123@cluster0.evqqp.mongodb.net/db1 --collection=subjects --out=data.txt
