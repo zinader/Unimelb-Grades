@@ -805,6 +805,43 @@ button::selection {
   border: none;
 }
 
+.pagination {
+  position: relative;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.pagination a {
+  background-color: rgb(23, 42, 69);
+  margin-right: 30px;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.pagination a:hover {
+  text-decoration: none;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+  transition: 0.9ms;
+}
+
+.previous a:hover {
+  color: aliceblue;
+}
+
+.next a:hover {
+  color: aliceblue;
+}
+
+.disabled a {
+  color: rgba(255, 255, 255, 0.294);
+}
+
+.disabled a:hover {
+  color: rgba(255, 255, 255, 0.294) !important;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
 @media only screen and (max-width: 768px) {
   .heading {
     width: 180px;
@@ -1159,6 +1196,12 @@ button::selection {
   }
   .form-inside {
     display: block !important;
+  }
+  .pagination a {
+    background-color: rgb(23, 42, 69);
+    margin-right: 15px;
+    padding: 8px;
+    border-radius: 6px;
   }
 }
 

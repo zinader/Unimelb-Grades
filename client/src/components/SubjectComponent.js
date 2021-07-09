@@ -6,6 +6,7 @@ import customData from "../data/data.json";
 import HashLoader from "react-spinners/HashLoader";
 import { api } from "../services/api";
 import PromptForm from "./PromptComponent";
+import ReactPaginate from "react-paginate";
 
 const SubjectComponent = withRouter(() => {
   const [subjects, setSubjects] = useState(customData);
@@ -13,6 +14,7 @@ const SubjectComponent = withRouter(() => {
   const [tempSubjects, setTempSubjects] = useState([]);
   const [loader, setLoader] = useState(true);
   const [buttonPopup, setButtonPopup] = useState(false);
+  const [pageNumber, setPageNumber] = useState(0);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -92,6 +94,40 @@ const SubjectComponent = withRouter(() => {
     }
     setButtonPopup(false);
   }
+
+  const subjectsPerPage = 20;
+  const PagesVisited = pageNumber * subjectsPerPage;
+  const pageCount = Math.ceil(topsubjects.length / subjectsPerPage);
+
+  const displaySubjects = topsubjects
+    .slice(PagesVisited, PagesVisited + subjectsPerPage)
+    .map((data) => {
+      return (
+        <div className="col-md-4">
+          <Link
+            to={`/subjects/${data.subjectName}/${data.subjectCode}`}
+            style={{ textDecoration: "none" }}
+          >
+            <div className="subjects-div">
+              <div className="subject-name">
+                <h1>{data.subjectName}</h1>
+                <div className="subject-scores-length">
+                  <h3>{data?.scores?.length} Results</h3>
+                </div>
+              </div>
+
+              <div className="subject-code">
+                <h2>{data.subjectCode}</h2>
+              </div>
+            </div>
+          </Link>
+        </div>
+      );
+    });
+
+  const changePage = ({ selected }) => {
+    setPageNumber(selected);
+  };
 
   return (
     <div>
@@ -177,27 +213,18 @@ const SubjectComponent = withRouter(() => {
                   </>
                 ) : (
                   <>
-                    {topsubjects?.map((data) => (
-                      <div className="col-md-4">
-                        <Link
-                          to={`/subjects/${data.subjectName}/${data.subjectCode}`}
-                          style={{ textDecoration: "none" }}
-                        >
-                          <div className="subjects-div">
-                            <div className="subject-name">
-                              <h1>{data.subjectName}</h1>
-                              <div className="subject-scores-length">
-                                <h3>{data?.scores?.length} Results</h3>
-                              </div>
-                            </div>
-
-                            <div className="subject-code">
-                              <h2>{data.subjectCode}</h2>
-                            </div>
-                          </div>
-                        </Link>
-                      </div>
-                    ))}
+                    {displaySubjects}
+                    <ReactPaginate
+                      previousLabel={"<< Previous"}
+                      nextLabel={"Next >>"}
+                      pageCount={pageCount}
+                      onPageChange={changePage}
+                      containerClassName={"pagination"}
+                      previousLinkClassName={"previous"}
+                      nextLinkClassName={"next"}
+                      disabledClassName={"disabled"}
+                      activeClassName={"active"}
+                    />
                   </>
                 )}
               </div>

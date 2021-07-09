@@ -18,15 +18,15 @@ const GraphComponent = withRouter((props) => {
     var x = Number(scores[i]);
     if (x < 50) {
       data2[0] += 1;
-    } else if (x >= 50 && x < 65) {
+    } else if (x >= 50 && x < 60) {
       data2[1] += 1;
-    } else if (x >= 65 && x < 70) {
+    } else if (x >= 60 && x < 69) {
       data2[2] += 1;
-    } else if (x >= 70 && x < 75) {
+    } else if (x >= 70 && x < 79) {
       data2[3] += 1;
-    } else if (x >= 75 && x < 80) {
+    } else if (x >= 80 && x < 89) {
       data2[4] += 1;
-    } else if (x >= 80 && x < 100) {
+    } else if (x >= 90 && x < 100) {
       data2[5] += 1;
     }
   }
@@ -48,14 +48,7 @@ const GraphComponent = withRouter((props) => {
         enabled: false,
       },
       xaxis: {
-        categories: [
-          "< 50 (F)",
-          "50-64(P)",
-          "64-69(H3)",
-          "70-74(H2B)",
-          "75-79(H2A)",
-          "80-100(H1)",
-        ],
+        categories: ["< 50", "50-59", "60-69", "70-79", "80-89", "90-100"],
         title: {
           text: "Grade",
           offsetX: 0,
