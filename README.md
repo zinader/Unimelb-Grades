@@ -2,15 +2,7 @@
 
 A web application that helps students view grades that other students have attained in the past.
 
-Author: Pulkit Aggarwal
-
-Tech Stack
-
-- React.js
-- Node.js
-- MongoDB
-
-Deployed Application: https://grades.tech/
+`Check it out`: https://grades.tech/
 
 ### Development
 
