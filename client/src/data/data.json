@@ -12,189 +12,8 @@
         "subjectCode": "ARTS90029"
     },
     {
-        "subjectName": "Declarative Programming",
-        "subjectCode": "COMP30020"
-    },
-    {
-        "subjectName": "Foundations of Design: Representation",
-        "subjectCode": "ARCH10001"
-    },
-    {
-        "subjectName": "Macroeconomics",
-        "subjectCode": "ECON30009"
-    },
-    {
-        "subjectName": "Imaging the Environment",
-        "subjectCode": "GEOM30009"
-    },
-    {
-        "subjectName": "Electrical Device Modelling",
-        "subjectCode": "ELEN30011"
-    },
-    {
-        "subjectName": "Electrical Network Analysis and Design",
-        "subjectCode": "ELEN30009"
-    },
-    {
-        "subjectName": "Foundations of Electrical Networks",
-        "subjectCode": "ELEN20005"
-    },
-    {
-        "subjectName": "Probability and Random Models",
-        "subjectCode": "ELEN90054"
-    },
-    {
-        "subjectName": "Microeconomics",
-        "subjectCode": "ECON30010"
-    },
-    {
-        "subjectName": "Foundations of Physics",
-        "subjectCode": "PHYC10009"
-    },
-    {
-        "subjectName": "Principles of Neuroscience",
-        "subjectCode": "NEUR30003"
-    },
-    {
-        "subjectName": "Principles of Microbiology & Immunology",
-        "subjectCode": "MIIM20001"
-    },
-    {
-        "subjectName": "Exploring Human Disease",
-        "subjectCode": "PATH20001"
-    },
-    {
-        "subjectName": "Biology of Australian Flora & Fauna",
-        "subjectCode": "BIOL10001"
-    },
-    {
-        "subjectName": "Italian 2",
-        "subjectCode": "ITAL10005"
-    },
-    {
-        "subjectName": "Foundations of Genetics and Genomics",
-        "subjectCode": "GENE20001"
-    },
-    {
-        "subjectName": "Painting Techniques",
-        "subjectCode": "FINA20026"
-    },
-    {
-        "subjectName": "Vector Calculus: Advanced",
-        "subjectCode": "MAST20032"
-    },
-    {
-        "subjectName": "The Developing World",
-        "subjectCode": "DEVT10001"
-    },
-    {
-        "subjectName": "Experimental Reproductive Physiology",
-        "subjectCode": "BIOL30002"
-    },
-    {
-        "subjectName": "Reproductive Physiology",
-        "subjectCode": "BIOL30001"
-    },
-    {
-        "subjectName": "Human Locomotor Systems",
-        "subjectCode": "ANAT30007"
-    },
-    {
-        "subjectName": "Clinical and Translational Physiology",
-        "subjectCode": "PHYS30011"
-    },
-    {
-        "subjectName": "Neuroscience and the Mind",
-        "subjectCode": "PSYC30018"
-    },
-    {
-        "subjectName": "Thinking Scientifically",
-        "subjectCode": "SCIE20001"
-    },
-    {
-        "subjectName": "The Philosophy of Mind",
-        "subjectCode": "PHIL20033"
-    },
-    {
-        "subjectName": "Human Physiology",
-        "subjectCode": "PHYS20008"
-    },
-    {
-        "subjectName": "Genetics & The Evolution of Life",
-        "subjectCode": "BIOL10005"
-    },
-    {
-        "subjectName": "Drugs in Biomedical Experiments",
-        "subjectCode": "PHRM30009"
-    },
-    {
-        "subjectName": "Biology of Cells and Organisms",
-        "subjectCode": "PHYS20008"
-    },
-    {
-        "subjectName": "Advanced Techniques in Molecular Science",
-        "subjectCode": "BCMB30010"
-    },
-    {
-        "subjectName": "Practical Chemistry 2",
-        "subjectCode": "CHEM20019"
-    },
-    {
-        "subjectName": "Chemical Research Project",
-        "subjectCode": "CHEM30013"
-    },
-    {
-        "subjectName": "Disabilitiy, Diversity and Inclusion",
-        "subjectCode": "UNIB10026"
-    },
-    {
-        "subjectName": "Complex Functions in Neuroscience",
-        "subjectCode": "NEUR30004"
-    },
-    {
-        "subjectName": "Developmental Neurobiology",
-        "subjectCode": "NEUR30005"
-    },
-    {
-        "subjectName": "Free Speech and Media Law",
-        "subjectCode": "BLAW10002"
-    },
-    {
-        "subjectName": "Crime, Criminology, and Critique",
-        "subjectCode": "CRIM10001"
-    },
-    {
-        "subjectName": "Cybercrime and Digital Criminology",
-        "subjectCode": "CRIM20007"
-    },
-    {
-        "subjectName": "Policing",
-        "subjectCode": "CRIM20003"
-    },
-    {
-        "subjectName": "Criminal Law and Political Justice",
-        "subjectCode": "CRIM20002"
-    },
-    {
-        "subjectName": "Young People, Crime and Justice",
-        "subjectCode": "CRIM30011"
-    },
-
-    {
-        "subjectName": "Chemistry 1",
-        "subjectCode": "CHEM10003"
-    },
-    {
-        "subjectName": "Science and Pseudoscience",
-        "subjectCode": "HPSC10002"
-    },
-    {
         "subjectName": "Air Quality Monitoring",
         "subjectCode": "EVSC90033"
-    },
-    {
-        "subjectName": "Algorithms and Data Structures",
-        "subjectCode": "COMP20003"
     },
     {
         "subjectName": "High Rise Structures",
@@ -217,40 +36,8 @@
         "subjectCode": "GENE90003"
     },
     {
-        "subjectName": "Algebra",
-        "subjectCode": "MAST30005"
-    },
-    {
-        "subjectName": "Stochastic Modelling",
-        "subjectCode": "MAST30001"
-    },
-    {
-        "subjectName": "Graph Theory",
-        "subjectCode": "MAST30011"
-    },
-    {
-        "subjectName": "Philosophy: The Big Questions",
-        "subjectCode": "PHIL10002"
-    },
-    {
-        "subjectName": "Applied Mathematical Modelling",
-        "subjectCode": "MAST30030"
-    },
-    {
-        "subjectName": "Intermediate Macroeconomics",
-        "subjectCode": "ECOM20001"
-    },
-    {
-        "subjectName": "Econometrics 2",
-        "subjectCode": "ECOM30002"
-    },
-    {
         "subjectName": "Advanced Studies in Econometrics 1",
         "subjectCode": "ECOM90018"
-    },
-    {
-        "subjectName": "Casework/Research Report 2",
-        "subjectCode": "DENT90042"
     },
     {
         "subjectName": "Sensor Systems",
@@ -299,6 +86,30 @@
     {
         "subjectName": "Capstone Professional Project",
         "subjectCode": "EDUC90989"
+    },
+    {
+        "subjectName": "Planning and Development Law",
+        "subjectCode": "LAWS70349"
+    },
+    {
+        "subjectName": "Forms and Politics in Architecture",
+        "subjectCode": "ABPL90357"
+    },
+    {
+        "subjectName": "Animal Production Systems 1",
+        "subjectCode": "VETS30031"
+    },
+    {
+        "subjectName": "Disaster Law and Climate Adaptation",
+        "subjectCode": "LAWS90088"
+    },
+    {
+        "subjectName": "Leading Change for Student Wellbeing",
+        "subjectCode": "EDUC90629"
+    },
+    {
+        "subjectName": "Digital Product Management",
+        "subjectCode": "BUSA90527"
     },
     {
         "subjectName": "Prosecuting the War on Terror",
@@ -681,92 +492,8 @@
         "subjectCode": "PSYT90006"
     },
     {
-        "subjectName": "Internet Communication",
-        "subjectCode": "MECM20003"
-    },
-    {
-        "subjectName": "Media Futures and New Technologies",
-        "subjectCode": "MECM30004"
-    },
-    {
-        "subjectName": "Practical Archeology",
-        "subjectCode": "ANCW30023"
-    },
-    {
-        "subjectName": "Biological Psychological",
-        "subjectCode": "PSYC20006"
-    },
-    {
-        "subjectName": "Consumer Behaviour",
-        "subjectCode": "MKTG20001"
-    },
-    {
-        "subjectName": "Classical Mythology",
-        "subjectCode": "ANCW20015"
-    },
-    {
-        "subjectName": "Archaeology of the Classical Greek World",
-        "subjectCode": "ANCW20027"
-    },
-    {
-        "subjectName": "Interpreting Material Culture",
-        "subjectCode": "ANCW20028"
-    },
-    {
-        "subjectName": "Ancient Egyptian 4",
-        "subjectCode": "ANCW20024"
-    },
-    {
-        "subjectName": "The Rise and Fall of the Roman Republic",
-        "subjectCode": "ANCW20019"
-    },
-    {
-        "subjectName": "Italian Cultural Studies A",
-        "subjectCode": "ITAL20009"
-    },
-    {
-        "subjectName": "Italian 4",
-        "subjectCode": "ITAL20008"
-    },
-    {
-        "subjectName": "Italian 5A",
-        "subjectCode": "ITAL30003"
-    },
-    {
         "subjectName": "Research Project",
         "subjectCode": "DENT40009"
-    },
-    {
-        "subjectName": "European Modernism",
-        "subjectCode": "EURO20002"
-    },
-    {
-        "subjectName": "A Taste of Europe: Melbourne Intensive",
-        "subjectCode": "EURO30006"
-    },
-    {
-        "subjectName": "Introduction to Language Translation",
-        "subjectCode": "ARTS30002"
-    },
-    {
-        "subjectName": "Chinese 3",
-        "subjectCode": "CHIN20001"
-    },
-    {
-        "subjectName": "Taiwan & Beyond: Chinese Settler Culture",
-        "subjectCode": "CHIN30002"
-    },
-    {
-        "subjectName": "Second Language Learning and Teaching",
-        "subjectCode": "LING20003"
-    },
-    {
-        "subjectName": "Australian Indigenous Languages",
-        "subjectCode": "LING30014"
-    },
-    {
-        "subjectName": "First Language Acquisition",
-        "subjectCode": "LING30003"
     },
     {
         "subjectName": "Transnat'l Corporations: Rights & Duties",
@@ -775,22 +502,6 @@
     {
         "subjectName": "Management in Development A",
         "subjectCode": "DEVT90044"
-    },
-    {
-        "subjectName": "Deafness and Communication",
-        "subjectCode": "EDUC20069"
-    },
-    {
-        "subjectName": "Media and Urban Culture in Asia",
-        "subjectCode": "ASIA20001"
-    },
-    {
-        "subjectName": "Biomolecules and Cells",
-        "subjectCode": "BIOL10002"
-    },
-    {
-        "subjectName": "Development of the Thinking Child",
-        "subjectCode": "PSYC30019"
     },
     {
         "subjectName": "Practice of Public Health Leadership",
@@ -5640,7 +5351,22 @@
         "subjectName": "International Law: Uncensored History",
         "subjectCode": "LAWS90128"
     },
-    
+    {
+        "subjectName": "The Cosmopolitan Imaginary",
+        "subjectCode": "CULS90011"
+    },
+    {
+        "subjectName": "Writing and Rewriting",
+        "subjectCode": "FLTV70044"
+    },
+    {
+        "subjectName": "Environmental Management ISO 14000",
+        "subjectCode": "ENEN90005"
+    },
+    {
+        "subjectName": "Investment, Regulation and Development",
+        "subjectCode": "LAWS70122"
+    },
     {
         "subjectName": "Economics Research Report Part 1",
         "subjectCode": "ECON90071"
@@ -5840,30 +5566,6 @@
     {
         "subjectName": "International Law and Relations",
         "subjectCode": "LAWS70455"
-    },
-    {
-        "subjectName": "International Migration Law",
-        "subjectCode": "LAWS70365"
-    },
-    {
-        "subjectName": "Operations Management",
-        "subjectCode": "MGMT90047"
-    },
-    {
-        "subjectName": "Dental Practice 1 PT2",
-        "subjectCode": "DENT90134"
-    },
-    {
-        "subjectName": "Oral Health Sciences 1B",
-        "subjectCode": "ORAL10004"
-    },
-    {
-        "subjectName": "Climate Change Mitigation",
-        "subjectCode": "ENST90033"
-    },
-    {
-        "subjectName": "Workspace Design Evaluation",
-        "subjectCode": "POPH90299"
     },
     {
         "subjectName": "Competition and New Technologies",
@@ -9890,10 +9592,6 @@
         "subjectCode": "MKTG20004"
     },
     {
-        "subjectName": "Science Research Project",
-        "subjectCode": "SCIE30001"
-    },
-    {
         "subjectName": "Chemical Process Analysis",
         "subjectCode": "CHEN20011"
     },
@@ -10633,7 +10331,6 @@
         "subjectName": "Principles of Veterinary Bioscience",
         "subjectCode": "VETS90062"
     },
-    
     {
         "subjectName": "Economics Research Report Part 1",
         "subjectCode": "ECON90071"
@@ -10927,20 +10624,8 @@
         "subjectCode": "ECON90009"
     },
     {
-        "subjectName": "The Cosmopolitan Imaginary",
-        "subjectCode": "CULS90011"
-    },
-    {
-        "subjectName": "Environmental Management ISO 14000",
-        "subjectCode": "ENEN90005"
-    },
-    {
         "subjectName": "Business, Governance & Ethics in Asia",
         "subjectCode": "BUSA90030"
-    },
-    {
-        "subjectName": "Investment, Regulation and Development",
-        "subjectCode": "LAWS70122"
     },
     {
         "subjectName": "Working with Marginalised Young People",
@@ -10949,10 +10634,6 @@
     {
         "subjectName": "Principles of Veterinary Bioscience",
         "subjectCode": "VETS90062"
-    },
-    {
-        "subjectName": "Writing and Rewriting",
-        "subjectCode": "FLTV70044"
     },
     {
         "subjectName": "Data Warehousing",
@@ -11013,30 +10694,6 @@
     {
         "subjectName": "Gastrointestinal Tract Pancreas Adrenals",
         "subjectCode": "VETS90043"
-    },
-    {
-        "subjectName":"Video Games: Remaking Reality",
-        "subjectCode":"CCDP10003"
-    },
-    {
-        "subjectName":"Web Information Technologies",
-        "subjectCode":"INFO30005"
-    },
-    {
-        "subjectName":"Foundations of Algorithms",
-        "subjectCode":"COMP10002"
-    },
-    {
-        "subjectName":"Database Systems",
-        "subjectCode":"INFO20003"
-    },
-    {
-        "subjectName":"Introductory Microeconomics",
-        "subjectCode":"ECON10004"
-    },
-    {
-        "subjectName":"Calculus 2",
-        "subjectCode":"MAST10006"
     },
     {
         "subjectName": "Dynamics",
@@ -12679,8 +12336,24 @@
         "subjectCode": "ENGL40003"
     },
     {
+        "subjectName": "Music Internship",
+        "subjectCode": "MUSI40091"
+    },
+    {
+        "subjectName": "Communication Networks",
+        "subjectCode": "ELEN90061"
+    },
+    {
         "subjectName": "Landscape Studio 4 Strategies",
         "subjectCode": "ABPL90170"
+    },
+    {
+        "subjectName": "Research Project (MMS)",
+        "subjectCode": "BIOM90016"
+    },
+    {
+        "subjectName": "Sustainability Governance and Leadership",
+        "subjectCode": "MULT90004"
     },
     {
         "subjectName": "Research Methods",
@@ -13345,11 +13018,6 @@
     {
         "subjectName": "Major Research Project",
         "subjectCode": "AGRI90072"
-    },
-    
-    {
-        "subjectName": "Communication Networks",
-        "subjectCode": "ELEN90061"
     },
     {
         "subjectName": "Survival Analysis & Regression for Rates",
@@ -14376,6 +14044,10 @@
         "subjectCode": "SPAN20027"
     },
     {
+        "subjectName": "Physics 1",
+        "subjectCode": "PHYC10003"
+    },
+    {
         "subjectName": "Construction Management",
         "subjectCode": "ABPL30055"
     },
@@ -14926,10 +14598,6 @@
     {
         "subjectName": "Calculus 1",
         "subjectCode": "MAST10005"
-    },
-    {
-        "subjectName": "Physics 1",
-        "subjectCode": "PHYC10003"
     },
     {
         "subjectName": "Vegetation Management and Conservation",
@@ -18324,10 +17992,6 @@
         "subjectCode": "AGRI90072"
     },
     {
-        "subjectName": "Music Internship",
-        "subjectCode": "MUSI40091"
-    },
-    {
         "subjectName": "Survival Analysis & Regression for Rates",
         "subjectCode": "POPH90145"
     },
@@ -18342,14 +18006,6 @@
     {
         "subjectName": "Environmental Sci. Research Project Pt 1",
         "subjectCode": "EVSC90034"
-    },
-    {
-        "subjectName": "Research Project (MMS)",
-        "subjectCode": "BIOM90016"
-    },
-    {
-        "subjectName": "Sustainability Governance and Leadership",
-        "subjectCode": "MULT90004"
     },
     {
         "subjectName": "Special Studies in Food",
@@ -20568,48 +20224,12 @@
         "subjectCode": "MUSI90227"
     },
     {
-        "subjectName": "Capstone Professional Project",
-        "subjectCode": "EDUC90989"
-    },
-    {
-        "subjectName": "Class Actions",
-        "subjectCode": "LAWS70019"
-    },
-    {
         "subjectName": "Foundations in Cancer Nursing",
         "subjectCode": "NURS90121"
     },
     {
-        "subjectName": "Construction Law in the Middle East",
-        "subjectCode": "LAWS90146"
-    },
-    {
-        "subjectName": "Planning and Development Law",
-        "subjectCode": "LAWS70349"
-    },
-    {
         "subjectName": "Cancer Therapeutics",
         "subjectCode": "MEDI90094"
-    },
-    {
-        "subjectName": "Leading Change for Student Wellbeing",
-        "subjectCode": "EDUC90629"
-    },
-    {
-        "subjectName": "Animal Production Systems 1",
-        "subjectCode": "VETS30031"
-    },
-    {
-        "subjectName": "Disaster Law and Climate Adaptation",
-        "subjectCode": "LAWS90088"
-    },
-    {
-        "subjectName": "Forms and Politics in Architecture",
-        "subjectCode": "ABPL90357"
-    },
-    {
-        "subjectName": "Digital Product Management",
-        "subjectCode": "BUSA90527"
     },
     {
         "subjectName": "Prosecuting the War on Terror",
@@ -25506,5 +25126,333 @@
     {
         "subjectName": "Understanding Society",
         "subjectCode": "SOCI10001"
+    },
+    {
+        "subjectName": "Web Information Technologies",
+        "subjectCode": "INFO30005"
+    },
+    {
+        "subjectName": "Video Games: Remaking Reality",
+        "subjectCode": "CCDP10003"
+    },
+    {
+        "subjectName": "Foundations of Algorithms",
+        "subjectCode": "COMP10002"
+    },
+    {
+        "subjectName": "Database Systems",
+        "subjectCode": "INFO20003"
+    },
+    {
+        "subjectName": "Introductory Microeconomics",
+        "subjectCode": "ECON10004"
+    },
+    {
+        "subjectName": "Calculus 2",
+        "subjectCode": "MAST10006"
+    },
+    {
+        "subjectName": "Algorithms and Data Structures",
+        "subjectCode": "COMP20003"
+    },
+    {
+        "subjectName": "Algebra",
+        "subjectCode": "MAST30005"
+    },
+    {
+        "subjectName": "Stochastic Modelling",
+        "subjectCode": "MAST30001"
+    },
+    {
+        "subjectName": "Graph Theory",
+        "subjectCode": "MAST30011"
+    },
+    {
+        "subjectName": "Philosophy: The Big Questions",
+        "subjectCode": "PHIL10002"
+    },
+    {
+        "subjectName": "Applied Mathematical Modelling",
+        "subjectCode": "MAST30030"
+    },
+    {
+        "subjectName": "Intermediate Macroeconomics",
+        "subjectCode": "ECOM20001"
+    },
+    {
+        "subjectName": "Econometrics 2",
+        "subjectCode": "ECOM30002"
+    },
+    {
+        "subjectName": "Chemistry 1",
+        "subjectCode": "CHEM10003"
+    },
+    {
+        "subjectName": "Science and Pseudoscience",
+        "subjectCode": "HPSC10002"
+    },
+    {
+        "subjectName": "Foundations of Physics",
+        "subjectCode": "PHYC10009"
+    },
+    {
+        "subjectName": "Principles of Neuroscience",
+        "subjectCode": "NEUR30003"
+    },
+    {
+        "subjectName": "Principles of Microbiology & Immunology",
+        "subjectCode": "MIIM20001"
+    },
+    {
+        "subjectName": "Exploring Human Disease",
+        "subjectCode": "PATH20001"
+    },
+    {
+        "subjectName": "Biology of Australian Flora & Fauna",
+        "subjectCode": "BIOL10001"
+    },
+    {
+        "subjectName": "Italian 2",
+        "subjectCode": "ITAL10005"
+    },
+    {
+        "subjectName": "Foundations of Genetics and Genomics",
+        "subjectCode": "GENE20001"
+    },
+    {
+        "subjectName": "Painting Techniques",
+        "subjectCode": "FINA20026"
+    },
+    {
+        "subjectName": "Vector Calculus: Advanced",
+        "subjectCode": "MAST20032"
+    },
+    {
+        "subjectName": "The Developing World",
+        "subjectCode": "DEVT10001"
+    },
+    {
+        "subjectName": "Experimental Reproductive Physiology",
+        "subjectCode": "BIOL30002"
+    },
+    {
+        "subjectName": "Reproductive Physiology",
+        "subjectCode": "BIOL30001"
+    },
+    {
+        "subjectName": "Human Locomotor Systems",
+        "subjectCode": "ANAT30007"
+    },
+    {
+        "subjectName": "Clinical and Translational Physiology",
+        "subjectCode": "PHYS30011"
+    },
+    {
+        "subjectName": "Neuroscience and the Mind",
+        "subjectCode": "PSYC30018"
+    },
+    {
+        "subjectName": "Thinking Scientifically",
+        "subjectCode": "SCIE20001"
+    },
+    {
+        "subjectName": "The Philosophy of Mind",
+        "subjectCode": "PHIL20033"
+    },
+    {
+        "subjectName": "Human Physiology",
+        "subjectCode": "PHYS20008"
+    },
+    {
+        "subjectName": "Genetics & The Evolution of Life",
+        "subjectCode": "BIOL10005"
+    },
+    {
+        "subjectName": "Drugs in Biomedical Experiments",
+        "subjectCode": "PHRM30009"
+    },
+    {
+        "subjectName": "Biology of Cells and Organisms",
+        "subjectCode": "PHYS20008"
+    },
+    {
+        "subjectName": "Advanced Techniques in Molecular Science",
+        "subjectCode": "BCMB30010"
+    },
+    {
+        "subjectName": "Practical Chemistry 2",
+        "subjectCode": "CHEM20019"
+    },
+    {
+        "subjectName": "Chemical Research Project",
+        "subjectCode": "CHEM30013"
+    },
+    {
+        "subjectName": "Disabilitiy, Diversity and Inclusion",
+        "subjectCode": "UNIB10026"
+    },
+    {
+        "subjectName": "Complex Functions in Neuroscience",
+        "subjectCode": "NEUR30004"
+    },
+    {
+        "subjectName": "Developmental Neurobiology",
+        "subjectCode": "NEUR30005"
+    },
+    {
+        "subjectName": "Free Speech and Media Law",
+        "subjectCode": "BLAW10002"
+    },
+    {
+        "subjectName": "Crime, Criminology, and Critique",
+        "subjectCode": "CRIM10001"
+    },
+    {
+        "subjectName": "Cybercrime and Digital Criminology",
+        "subjectCode": "CRIM20007"
+    },
+    {
+        "subjectName": "Policing",
+        "subjectCode": "CRIM20003"
+    },
+    {
+        "subjectName": "Criminal Law and Political Justice",
+        "subjectCode": "CRIM20002"
+    },
+    {
+        "subjectName": "Young People, Crime and Justice",
+        "subjectCode": "CRIM30011"
+    },
+    {
+        "subjectName": "Internet Communication",
+        "subjectCode": "MECM20003"
+    },
+    {
+        "subjectName": "Media Futures and New Technologies",
+        "subjectCode": "MECM30004"
+    },
+    {
+        "subjectName": "Practical Archeology",
+        "subjectCode": "ANCW30023"
+    },
+    {
+        "subjectName": "Biological Psychological",
+        "subjectCode": "PSYC20006"
+    },
+    {
+        "subjectName": "Consumer Behaviour",
+        "subjectCode": "MKTG20001"
+    },
+    {
+        "subjectName": "Classical Mythology",
+        "subjectCode": "ANCW20015"
+    },
+    {
+        "subjectName": "Archaeology of the Classical Greek World",
+        "subjectCode": "ANCW20027"
+    },
+    {
+        "subjectName": "Interpreting Material Culture",
+        "subjectCode": "ANCW20028"
+    },
+    {
+        "subjectName": "Ancient Egyptian 4",
+        "subjectCode": "ANCW20024"
+    },
+    {
+        "subjectName": "The Rise and Fall of the Roman Republic",
+        "subjectCode": "ANCW20019"
+    },
+    {
+        "subjectName": "Italian Cultural Studies A",
+        "subjectCode": "ITAL20009"
+    },
+    {
+        "subjectName": "Italian 4",
+        "subjectCode": "ITAL20008"
+    },
+    {
+        "subjectName": "Italian 5A",
+        "subjectCode": "ITAL30003"
+    },
+    {
+        "subjectName": "European Modernism",
+        "subjectCode": "EURO20002"
+    },
+    {
+        "subjectName": "A Taste of Europe: Melbourne Intensive",
+        "subjectCode": "EURO30006"
+    },
+    {
+        "subjectName": "Introduction to Language Translation",
+        "subjectCode": "ARTS30002"
+    },
+    {
+        "subjectName": "Chinese 3",
+        "subjectCode": "CHIN20001"
+    },
+    {
+        "subjectName": "Taiwan & Beyond: Chinese Settler Culture",
+        "subjectCode": "CHIN30002"
+    },
+    {
+        "subjectName": "Second Language Learning and Teaching",
+        "subjectCode": "LING20003"
+    },
+    {
+        "subjectName": "Australian Indigenous Languages",
+        "subjectCode": "LING30014"
+    },
+    {
+        "subjectName": "First Language Acquisition",
+        "subjectCode": "LING30003"
+    },
+    {
+        "subjectName": "Deafness and Communication",
+        "subjectCode": "EDUC20069"
+    },
+    {
+        "subjectName": "Media and Urban Culture in Asia",
+        "subjectCode": "ASIA20001"
+    },
+    {
+        "subjectName": "Development of the Thinking Child",
+        "subjectCode": "PSYC30019"
+    },
+    {
+        "subjectName": "Declarative Programming",
+        "subjectCode": "COMP30020"
+    },
+    {
+        "subjectName": "Foundations of Design: Representation",
+        "subjectCode": "ARCH10001"
+    },
+    {
+        "subjectName": "Macroeconomics",
+        "subjectCode": "ECON30009"
+    },
+    {
+        "subjectName": "Imaging the Environment",
+        "subjectCode": "GEOM30009"
+    },
+    {
+        "subjectName": "Electrical Device Modelling",
+        "subjectCode": "ELEN30011"
+    },
+    {
+        "subjectName": "Electrical Network Analysis and Design",
+        "subjectCode": "ELEN30009"
+    },
+    {
+        "subjectName": "Foundations of Electrical Networks",
+        "subjectCode": "ELEN20005"
+    },
+    {
+        "subjectName": "Probability and Random Models",
+        "subjectCode": "ELEN90054"
+    },
+    {
+        "subjectName": "Microeconomics",
+        "subjectCode": "ECON30010"
     }
 ]
