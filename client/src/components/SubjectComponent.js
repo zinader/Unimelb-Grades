@@ -105,7 +105,7 @@ const SubjectComponent = withRouter(() => {
       return (
         <div className="col-md-4">
           <Link
-            to={`/subjects/${data.subjectName}/${data.subjectCode}`}
+            to={`/items/${data.subjectName}/${data.subjectCode}`}
             style={{ textDecoration: "none" }}
           >
             <div className="subjects-div">
@@ -156,7 +156,7 @@ const SubjectComponent = withRouter(() => {
             </span>
             <span className="breadth-recommendations">
               <Link
-                to={`/subjects/wamboosters`}
+                to={`/items/wamboosters`}
                 style={{
                   textDecoration: "none",
                   color: "rgba(255, 255, 255, 0.698)",
@@ -187,7 +187,7 @@ const SubjectComponent = withRouter(() => {
                     {tempSubjects?.map((data) => (
                       <div className="col-md-4">
                         <Link
-                          to={`/subjects/${data.subjectName}/${data.subjectCode}`}
+                          to={`/items/${data.subjectName}/${data.subjectCode}`}
                           style={{ textDecoration: "none" }}
                         >
                           <div className="subjects-div">

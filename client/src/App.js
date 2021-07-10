@@ -15,14 +15,14 @@ function App() {
     <div className="App">
       <Router>
         <Route path="/" exact component={MainComponent} />
-        <Route path="/subjects/:name/:code" exact component={ScoreComponent} />
+        <Route path="/items/:name/:code" exact component={ScoreComponent} />
         <Route
-          path="/subjects/wamboosters/:name/:code"
+          path="/items/wamboosters/:name/:code"
           exact
           component={WamBoosterScoreComponent}
         />
         <Route
-          path="/subjects/wamboosters"
+          path="/items/wamboosters"
           exact
           component={WamBoosterComponent}
         />

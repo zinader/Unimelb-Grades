@@ -13,7 +13,6 @@ const WamBoosterComponent = withRouter(() => {
   useEffect(() => {
     const fetchData = async () => {
       const results = await api.get("/wamboosters");
-
       setwamBoosters(results);
       setLoader(false);
     };
@@ -39,8 +38,9 @@ const WamBoosterComponent = withRouter(() => {
             {wamBoosters?.data?.data.map((data) => (
               <div className="col-md-4">
                 <Link
-                  to={`/subjects/wamboosters/${data.subjectName}/${data.subjectCode}`}
+                  to={`/items/wamboosters/${data.subjectName}/${data.subjectCode}`}
                   style={{ textDecoration: "none" }}
+                  data={{}}
                 >
                   <div className="subjects-div">
                     <div className="subject-name">

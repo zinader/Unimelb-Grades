@@ -14,6 +14,9 @@ import FeedbackComponent from "../FeedbackComponent";
 const WamBoosterScoreComponent = withRouter((props) => {
   const [subjectCode] = useState(props.match.params.code);
   const [scores, setScores] = useState([]);
+  const [links, setLinks] = useState([]);
+  const [feedback, setFeedback] = useState([]);
+
   const [loader, setLoader] = useState(true);
   const [buttonPopup, setButtonPopup] = useState(false);
 
@@ -21,6 +24,8 @@ const WamBoosterScoreComponent = withRouter((props) => {
     const fetchData = async () => {
       const results = await api.get("/item/" + props.match.params.code);
       setScores(results?.data?.data[0]?.scores);
+      setLinks(results?.data?.data[0]?.links);
+      setFeedback(results?.data?.data[0]?.feedback);
       setLoader(false);
     };
     fetchData();
@@ -63,7 +68,7 @@ const WamBoosterScoreComponent = withRouter((props) => {
         <Link
           style={{ display: "flex" }}
           className="back-button"
-          to="/subjects/wamboosters"
+          to="/items/wamboosters"
         >
           <FaBackward />
         </Link>
@@ -119,10 +124,14 @@ const WamBoosterScoreComponent = withRouter((props) => {
             {scores.length > 0 ? (
               <div>
                 <div className="graph">
-                  <GraphComponent scores={scores} />
+                  <GraphComponent
+                    scores={scores}
+                    links={links}
+                    code={subjectCode}
+                  />
                 </div>
                 <div>
-                  <FeedbackComponent data={props.match.params.code} />
+                  <FeedbackComponent data={subjectCode} feedback={feedback} />
                 </div>
               </div>
             ) : (

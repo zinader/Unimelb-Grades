@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
 
-const subjectSchema = new Schema(
+const itemSchema = new Schema(
   {
     subjectName: { type: String, required: true },
     subjectCode: { type: String, required: true },
@@ -15,12 +15,13 @@ const subjectSchema = new Schema(
       },
     ],
     links: { type: Array, required: true, default: [] },
+    wamBooster: { type: Number, required: true, default: 1 },
   },
   {
     timestamps: true,
   }
 );
 
-const Subject = mongoose.model("Subject", subjectSchema);
+const Item = mongoose.model("Item", itemSchema);
 
-export default Subject;
+export default Item;

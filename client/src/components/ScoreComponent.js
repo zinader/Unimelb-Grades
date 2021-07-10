@@ -49,7 +49,6 @@ const ScoreComponent = withRouter((props) => {
   }
 
   const onWamButton = () => {
-    console.log(subjectCode);
     const sendRequest = async () => {
       await api
         .post("/addwambooster", {

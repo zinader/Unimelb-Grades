@@ -1,11 +1,11 @@
 import express from "express";
 const router = express.Router();
-import Subject from "../models/subjects_model.js";
+import Item from "../models/items_model.js";
 
-// Update subject scores
+// Update item scores
 
 router.route("/").post((req, res) => {
-  Subject.findOneAndUpdate(
+  Item.findOneAndUpdate(
     { subjectCode: req.body.subjectCode },
     { $push: { scores: req.body.score } },
     { new: true }
@@ -27,7 +27,7 @@ router.route("/").post((req, res) => {
 // Add links
 
 router.route("/addlinks").post((req, res) => {
-  Subject.findOneAndUpdate(
+  Item.findOneAndUpdate(
     { subjectCode: req.body.subjectCode },
     { $push: { links: req.body.link } },
     { new: true }
@@ -49,7 +49,7 @@ router.route("/addlinks").post((req, res) => {
 // Upvote Comment
 
 router.route("/feedback/upvote/:upvotes").post((req, res) => {
-  Subject.findOneAndUpdate(
+  Item.findOneAndUpdate(
     { subjectCode: req.body.subjectCode, "feedback._id": req.body.id },
     { $set: { "feedback.$.upvotes": Number(req.params.upvotes) + 1 } },
     { new: true }
@@ -71,7 +71,7 @@ router.route("/feedback/upvote/:upvotes").post((req, res) => {
 // Downvote Comment
 
 router.route("/feedback/downvote/:upvotes").post((req, res) => {
-  Subject.findOneAndUpdate(
+  Item.findOneAndUpdate(
     { subjectCode: req.body.subjectCode, "feedback._id": req.body.id },
     { $set: { "feedback.$.upvotes": Number(req.params.upvotes) - 1 } },
     { new: true }
@@ -93,7 +93,7 @@ router.route("/feedback/downvote/:upvotes").post((req, res) => {
 // Submit Feedback
 
 router.route("/addfeedback").post((req, res) => {
-  Subject.findOneAndUpdate(
+  Item.findOneAndUpdate(
     { subjectCode: req.body.subjectCode },
     { $push: { feedback: req.body.feedback } },
     { new: true }
@@ -115,7 +115,7 @@ router.route("/addfeedback").post((req, res) => {
 // Report Comment
 
 router.route("/feedback/report").post((req, res) => {
-  Subject.findOneAndUpdate(
+  Item.findOneAndUpdate(
     { subjectCode: req.body.subjectCode, "feedback._id": req.body.id },
     { $set: { "feedback.$.report": true } },
     { new: true }
@@ -134,10 +134,10 @@ router.route("/feedback/report").post((req, res) => {
     );
 });
 
-// Mark a subject as a wambooster
+// Mark an item as a wambooster
 
 router.route("/addwambooster").post((req, res) => {
-  Subject.findOneAndUpdate(
+  Item.findOneAndUpdate(
     { subjectCode: req.body.subjectCode },
     { $inc: { wamBooster: 1 } }
   )
@@ -155,9 +155,9 @@ router.route("/addwambooster").post((req, res) => {
     );
 });
 
-// Get particular subject scores
+// Get particular item scores
 router.route("/item/:code").get((req, res) => {
-  Subject.find({
+  Item.find({
     subjectCode: req.params.code,
   })
     .then((result) =>
@@ -174,10 +174,10 @@ router.route("/item/:code").get((req, res) => {
     );
 });
 
-// Get all subjects sorted
+// Get all items sorted
 
 router.route("/").get((req, res) => {
-  Subject.find()
+  Item.find()
     .sort({ scores: -1 })
     .then((result) =>
       res.json({
@@ -193,10 +193,10 @@ router.route("/").get((req, res) => {
     );
 });
 
-// Get all breadths
+// Get all wamboosters
 
 router.route("/wamboosters").get((req, res) => {
-  Subject.find({
+  Item.find({
     wamBooster: { $gt: 0 },
   })
     .sort({ wamBooster: -1 })
@@ -214,10 +214,10 @@ router.route("/wamboosters").get((req, res) => {
     );
 });
 
-// Get top 30 subjects
+// Get top 30 items
 
 router.route("/top").get((req, res) => {
-  Subject.find()
+  Item.find()
     .limit(60)
     .sort({ scores: -1 })
     .then((result) =>

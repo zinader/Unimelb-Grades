@@ -153,6 +153,7 @@ const GraphComponent = withRouter((props) => {
     if (links.includes(link)) {
       alert("Link already present!");
     } else {
+      console.log("here");
       sendRequest();
     }
   };

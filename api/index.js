@@ -19,9 +19,9 @@ app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
 });
 
-import subjectsRouter from "./routes/subjects.js";
+import itemsRouter from "./routes/items.js";
 
-app.use("/subjects", subjectsRouter);
+app.use("/items", itemsRouter);
 
 //setup mongoose
 console.log("Connecting to MongoDB");
