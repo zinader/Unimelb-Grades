@@ -36,9 +36,8 @@ nodemon index.js
 
 ### Current Stats
 
-Unique Users - 1133
-Page Views - 13,000
-Scores Submitted - 1000+
+- Unique Users - 1133
+- Page Views - 13,000
 
 #### Scrapers
 
