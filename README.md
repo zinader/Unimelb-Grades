@@ -34,6 +34,11 @@ npm install
 nodemon index.js
 ```
 
+### Current Stats
+
+- Unique Users - 1133
+- Page Views - 13,000
+
 #### Scrapers
 
 The scraped data has most of the subjects but the handbook is a bit messed up and I had to add some subjects manually. If you think there's an important subject missing. Please fill up this form and I'll add it asap. :)
