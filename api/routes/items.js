@@ -7,7 +7,8 @@ import Item from "../models/items_model.js";
 router.route("/").post((req, res) => {
   Item.findOneAndUpdate(
     { subjectCode: req.body.subjectCode },
-    { $push: { scores: req.body.score } },
+    { $push: { scores: req.body.score }, $inc: { scores_count: 1 } },
+
     { new: true }
   )
     .then((result) =>
@@ -219,7 +220,7 @@ router.route("/wamboosters").get((req, res) => {
 router.route("/top").get((req, res) => {
   Item.find()
     .limit(60)
-    .sort({ scores: -1 })
+    .sort({ scores_count: -1 })
     .then((result) =>
       res.json({
         success: true,

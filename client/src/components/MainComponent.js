@@ -16,17 +16,17 @@ function MainComponent() {
         </h3>
         <h3>
           {" "}
-          Mostly all the subjects are in the list but if you can find a subject
-          which is not, please fill this{" "}
+          If you want to give some feedback, have some suggestions or just can't
+          find a subject, please fill this{" "}
           <a
-            href="https://forms.gle/Co1wpzbGnNoX7dC48"
+            href="https://forms.gle/pDtsTf9J4crLmiEq5"
             className="missing-form"
             target="_blank"
             rel="noreferrer"
           >
             form
           </a>{" "}
-          up and I'll add it asap.
+          up.
         </h3>
       </div>
 

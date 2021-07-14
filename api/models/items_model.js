@@ -16,6 +16,7 @@ const itemSchema = new Schema(
     ],
     links: { type: Array, required: true, default: [] },
     wamBooster: { type: Number, required: true, default: 1 },
+    scores_count: { type: Number, required: true, default: 1 },
   },
   {
     timestamps: true,

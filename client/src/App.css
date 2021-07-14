@@ -190,7 +190,7 @@ a {
 .popup-btn button {
   background-color: rgb(23, 42, 69);
   margin-left: 35px;
-  border-radius: 6px;
+  border-radius: 6px !important;
   border: none;
   height: 40px;
   font-size: 20px;
