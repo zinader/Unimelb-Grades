@@ -220,7 +220,7 @@ router.route("/wamboosters").get((req, res) => {
 router.route("/top").get((req, res) => {
   Item.find()
     .limit(60)
-    .sort({ scores_count: -1 })
+    .sort({ scores: -1 })
     .then((result) =>
       res.json({
         success: true,

@@ -27,8 +27,13 @@ app.use("/items", itemsRouter);
 console.log("Connecting to MongoDB");
 
 mongoose.connect(
-  process.env.MONGO_URL || "mongodb://localhost:27017/unimelb-grades",
-  { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true },
+  "mongodb+srv://cluster0.evqqp.mongodb.net/db1?retryWrites=true&w=majority",
+  {
+    user: process.env.MONGO_USER,
+    pass: process.env.MONGO_PASS,
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  },
   (err) => {
     if (err) return console.error(err);
     console.log("MongoDB connection established");
