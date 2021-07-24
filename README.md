@@ -39,8 +39,6 @@ nodemon index.js
 - Unique Users - 1335
 - Page Views - 15,000+
 
-#### Scrapers
 
-The scraped data has most of the subjects but the handbook is a bit messed up and I had to add some subjects manually. If you think there's an important subject missing. Please fill up this form and I'll add it asap. :)
 
 https://forms.gle/Co1wpzbGnNoX7dC48
