@@ -39,6 +39,4 @@ nodemon index.js
 - Unique Users - 1335
 - Page Views - 15,000+
 
-
-
-https://forms.gle/Co1wpzbGnNoX7dC48
+Always open to suggestions, Please open an issue or a pull request.
