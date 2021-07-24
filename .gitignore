@@ -1,3 +1,6 @@
 node_modules/
-
+.DS_Store
+.npmignore
+client/.firebase
+client/firebase.json
 api/.env
