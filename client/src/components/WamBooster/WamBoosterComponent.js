@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, withRouter } from "react-router-dom";
 
 import { api } from "../../services/api";
-import Header from "../Header";
+import Header from "../Header/Header";
 import { FaBackward } from "react-icons/fa";
 import HashLoader from "react-spinners/HashLoader";
 

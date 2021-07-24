@@ -6,11 +6,11 @@ import { FaCheck } from "react-icons/fa";
 import HashLoader from "react-spinners/HashLoader";
 
 import ScorePromptForm from "./ScorePromptComponent";
-import { api } from "../services/api";
-import Header from "./Header";
-import GraphComponent from "./GraphComponent";
-import FeedbackComponent from "./FeedbackComponent";
-import Footer from "./Footer";
+import { api } from "../../services/api.js";
+import Header from "../Header/Header";
+import GraphComponent from "../GraphComponent";
+import FeedbackComponent from "../FeedbackComponent";
+import Footer from "../Footer/Footer";
 
 const ScoreComponent = withRouter((props) => {
   const [subjectCode] = useState(props.match.params.code);

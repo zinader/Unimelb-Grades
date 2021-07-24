@@ -5,9 +5,9 @@ import { FaBackward } from "react-icons/fa";
 import { FaCheck } from "react-icons/fa";
 import HashLoader from "react-spinners/HashLoader";
 
-import ScorePromptForm from "../ScorePromptComponent";
+import ScorePromptForm from "../SubjectScore/ScorePromptComponent";
 import { api } from "../../services/api";
-import Header from "../Header";
+import Header from "../Header/Header";
 import GraphComponent from "../GraphComponent";
 import FeedbackComponent from "../FeedbackComponent";
 

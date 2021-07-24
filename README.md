@@ -1,4 +1,4 @@
-## Unimelb Grade Statistics
+## Unimelb Grades
 
 A web application that helps students view grades that other students have attained in the past.
 
@@ -36,8 +36,8 @@ nodemon index.js
 
 ### Current Stats
 
-- Unique Users - 1133
-- Page Views - 13,000
+- Unique Users - 1335
+- Page Views - 15,000+
 
 #### Scrapers
 

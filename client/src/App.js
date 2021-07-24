@@ -1,7 +1,7 @@
 import "./App.css";
 import { Route, BrowserRouter as Router } from "react-router-dom";
 import MainComponent from "./components/MainComponent";
-import ScoreComponent from "./components/ScoreComponent";
+import ScoreComponent from "./components/SubjectScore/ScoreComponent";
 import WamBoosterComponent from "./components/WamBooster/WamBoosterComponent";
 import WamBoosterScoreComponent from "./components/WamBooster/WamboosterScoreComponent";
 

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import { FaWindowClose } from "react-icons/fa";
-import { api } from "../services/api";
+import { api } from "../../services/api.js";
 
 const PromptForm = (props) => {
   const [subjectCode, setSubjectCode] = useState("");

@@ -1,9 +1,8 @@
 import React from "react";
 
-import Header from "./Header";
-import SubjectComponent from "./SubjectComponent";
-
-import Footer from "./Footer";
+import Header from "./Header/Header";
+import SubjectComponent from "./Subject/SubjectComponent";
+import Footer from "./Footer/Footer";
 
 function MainComponent() {
   return (

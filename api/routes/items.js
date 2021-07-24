@@ -1,238 +1,62 @@
 import express from "express";
 const router = express.Router();
-import Item from "../models/items_model.js";
+
+import {
+  addScore,
+  addLinks,
+  upvoteComment,
+  downvoteComment,
+  addFeedback,
+  reportComment,
+  addWamBooster,
+  getParticularItem,
+  getAllItems,
+  getWamBoosters,
+  getTopItems,
+} from "../controllers/items_controller.js";
 
 // Update item scores
 
-router.route("/").post((req, res) => {
-  Item.findOneAndUpdate(
-    { subjectCode: req.body.subjectCode },
-    { $push: { scores: req.body.score }, $inc: { scores_count: 1 } },
-
-    { new: true }
-  )
-    .then((result) =>
-      res.json({
-        success: true,
-        data: result,
-      })
-    )
-    .catch((err) =>
-      res.json({
-        success: false,
-        error: err,
-      })
-    );
-});
+router.post("/", addScore);
 
 // Add links
 
-router.route("/addlinks").post((req, res) => {
-  Item.findOneAndUpdate(
-    { subjectCode: req.body.subjectCode },
-    { $push: { links: req.body.link } },
-    { new: true }
-  )
-    .then((result) =>
-      res.json({
-        success: true,
-        data: result,
-      })
-    )
-    .catch((err) =>
-      res.json({
-        success: false,
-        error: err,
-      })
-    );
-});
+router.post("/addlinks", addLinks);
 
 // Upvote Comment
 
-router.route("/feedback/upvote/:upvotes").post((req, res) => {
-  Item.findOneAndUpdate(
-    { subjectCode: req.body.subjectCode, "feedback._id": req.body.id },
-    { $set: { "feedback.$.upvotes": Number(req.params.upvotes) + 1 } },
-    { new: true }
-  )
-    .then((result) =>
-      res.json({
-        success: true,
-        data: result,
-      })
-    )
-    .catch((err) =>
-      res.json({
-        success: false,
-        error: err,
-      })
-    );
-});
+router.post("/feedback/upvote/:upvotes", upvoteComment);
 
 // Downvote Comment
 
-router.route("/feedback/downvote/:upvotes").post((req, res) => {
-  Item.findOneAndUpdate(
-    { subjectCode: req.body.subjectCode, "feedback._id": req.body.id },
-    { $set: { "feedback.$.upvotes": Number(req.params.upvotes) - 1 } },
-    { new: true }
-  )
-    .then((result) =>
-      res.json({
-        success: true,
-        data: result,
-      })
-    )
-    .catch((err) =>
-      res.json({
-        success: false,
-        error: err,
-      })
-    );
-});
+router.post("/feedback/downvote/:upvotes", downvoteComment);
 
 // Submit Feedback
 
-router.route("/addfeedback").post((req, res) => {
-  Item.findOneAndUpdate(
-    { subjectCode: req.body.subjectCode },
-    { $push: { feedback: req.body.feedback } },
-    { new: true }
-  )
-    .then((result) =>
-      res.json({
-        success: true,
-        data: result,
-      })
-    )
-    .catch((err) =>
-      res.json({
-        success: false,
-        error: err,
-      })
-    );
-});
+router.post("/addfeedback", addFeedback);
 
 // Report Comment
 
-router.route("/feedback/report").post((req, res) => {
-  Item.findOneAndUpdate(
-    { subjectCode: req.body.subjectCode, "feedback._id": req.body.id },
-    { $set: { "feedback.$.report": true } },
-    { new: true }
-  )
-    .then((result) =>
-      res.json({
-        success: true,
-        data: result,
-      })
-    )
-    .catch((err) =>
-      res.json({
-        success: false,
-        error: err,
-      })
-    );
-});
+router.post("/feedback/report", reportComment);
 
 // Mark an item as a wambooster
 
-router.route("/addwambooster").post((req, res) => {
-  Item.findOneAndUpdate(
-    { subjectCode: req.body.subjectCode },
-    { $inc: { wamBooster: 1 } }
-  )
-    .then((result) =>
-      res.json({
-        success: true,
-        data: result,
-      })
-    )
-    .catch((err) =>
-      res.json({
-        success: false,
-        error: err,
-      })
-    );
-});
+router.post("/addwambooster", addWamBooster);
 
 // Get particular item scores
-router.route("/item/:code").get((req, res) => {
-  Item.find({
-    subjectCode: req.params.code,
-  })
-    .then((result) =>
-      res.json({
-        success: true,
-        data: result,
-      })
-    )
-    .catch((err) =>
-      res.json({
-        success: false,
-        error: err,
-      })
-    );
-});
+
+router.get("/item/:code", getParticularItem);
 
 // Get all items sorted
 
-router.route("/").get((req, res) => {
-  Item.find()
-    .sort({ scores: -1 })
-    .then((result) =>
-      res.json({
-        success: true,
-        data: result,
-      })
-    )
-    .catch((err) =>
-      res.json({
-        success: false,
-        error: err,
-      })
-    );
-});
+router.get("/", getAllItems);
 
 // Get all wamboosters
 
-router.route("/wamboosters").get((req, res) => {
-  Item.find({
-    wamBooster: { $gt: 0 },
-  })
-    .sort({ wamBooster: -1 })
-    .then((result) =>
-      res.json({
-        success: true,
-        data: result,
-      })
-    )
-    .catch((err) =>
-      res.json({
-        success: false,
-        error: err,
-      })
-    );
-});
+router.get("/wamboosters", getWamBoosters);
 
-// Get top 30 items
+// Get top 60 items
 
-router.route("/top").get((req, res) => {
-  Item.find()
-    .limit(60)
-    .sort({ scores: -1 })
-    .then((result) =>
-      res.json({
-        success: true,
-        data: result,
-      })
-    )
-    .catch((err) =>
-      res.json({
-        success: false,
-        error: err,
-      })
-    );
-});
+router.get("/top", getTopItems);
 
 export default router;

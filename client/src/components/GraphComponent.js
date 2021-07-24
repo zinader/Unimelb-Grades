@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Chart from "react-apexcharts";
 import { withRouter } from "react-router-dom";
 
 import { Form, Button } from "react-bootstrap";
-import { linkSync } from "fs";
 import { api } from "../services/api";
 
 const GraphComponent = withRouter((props) => {
