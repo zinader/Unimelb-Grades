@@ -34,9 +34,6 @@ npm install
 nodemon index.js
 ```
 
-### Current Stats
-
-- Unique Users - 1335
-- Page Views - 15,000+
+# CISSA Winterhack Presentation
 
 Always open to suggestions, Please open an issue or a pull request.
